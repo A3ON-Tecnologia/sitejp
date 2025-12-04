@@ -13,6 +13,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=montserrat:400,500,600,700" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Vite Assets -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -34,7 +38,7 @@
                 <a href="{{ url('/') }}" class="cursor-pointer">
                     <button
                         class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
-                        VOLTAR PARA HOME
+                        VOLTAR PARA O INÍCIO
                     </button>
                 </a>
             </div>
@@ -50,7 +54,7 @@
                             class="text-white font-bold hover:underline transition-colors cursor-pointer">Log in</a>
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}"
-                                class="text-white font-bold hover:underline transition-colors cursor-pointer">Register</a>
+                                class="text-white font-bold hover:underline transition-colors cursor-pointer">Cadastro</a>
                         @endif
                     @endauth
                 @endif
@@ -60,18 +64,37 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Title Section with Typing Animation -->
-        <section class="relative px-6 min-h-screen flex items-start justify-center overflow-hidden pt-8">
+        <!-- Title Section -->
+        <section class="relative px-6 min-h-screen flex items-start justify-center overflow-hidden pt-32">
             <!-- Background Image -->
             <div class="absolute inset-0 w-full h-full z-0">
                 <img src="{{ asset('images/bg-2.jpg') }}" alt="Background" class="w-full h-full object-cover">
             </div>
 
             <!-- Content Overlay -->
-            <div class="container mx-auto max-w-6xl text-center relative z-10 pt-24">
-                <h1 class="text-5xl md:text-7xl font-bold text-white typing-animation">
+            <div class="container mx-auto max-w-6xl text-center relative z-10 pt-28">
+                <h1 class="text-4xl md:text-6xl font-bold text-brand-orange mb-16"
+                    style="font-family: 'Raleway', sans-serif;">
                     CRONOGRAMA REFORMA TRIBUTÁRIA
                 </h1>
+
+                <h2 class="text-4xl text-white mt-10 mb-10 text-center" style="font-family: 'Raleway', sans-serif;">
+                    Entenda as Principais Mudanças
+                </h2>
+
+                <div class="bg-brand-orange p-6 rounded-lg mt-10">
+                    <p class="text-2xl text-white text-center max-w-4xl mx-auto"
+                        style="font-family: 'Source Serif 4', serif;">
+                        A <span class="text-dark-blue font-bold">Reforma Tributária Brasileira</span> representa a maior
+                        transformação do sistema fiscal do país em décadas. Com implementação gradual entre <span
+                            class="text-dark-blue font-bold">2026 e 2033</span>, ela visa simplificar a complexa
+                        estrutura de impostos, unificando tributos como <span class="text-dark-blue font-bold">PIS,
+                            COFINS, ICMS e ISS</span> em um modelo mais eficiente.<br>
+                        Esta linha do tempo interativa apresenta as principais etapas da transição, seus impactos
+                        práticos e o que empresas e profissionais precisam saber para se preparar adequadamente. Clique
+                        em cada período para explorar as mudanças específicas de cada fase.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -175,36 +198,6 @@
     </main>
 
     <style>
-        /* Typing Animation */
-        @keyframes typing {
-
-            0%,
-            100% {
-                width: 0;
-            }
-
-            50%,
-            90% {
-                width: 100%;
-            }
-        }
-
-        @keyframes blink {
-            50% {
-                border-color: transparent;
-            }
-        }
-
-        .typing-animation {
-            overflow: hidden;
-            border-right: 3px solid #ffffff;
-            white-space: nowrap;
-            margin: 0 auto;
-            animation: typing 7s steps(40, end) infinite, blink 0.75s step-end infinite;
-            display: inline-block;
-            max-width: fit-content;
-        }
-
         /* Timeline Button Active State */
         .timeline-btn.active {
             transform: scale(1.1);
@@ -220,6 +213,10 @@
 
         .carousel-section {
             scroll-snap-align: start;
+        }
+
+        .text-dark-blue {
+            color: #03055B;
         }
     </style>
 
