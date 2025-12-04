@@ -5,11 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>JP Contábil</title>
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="{{ asset('images/logo-3.png') }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -32,7 +31,8 @@
             <!-- Center Button -->
             <div>
                 <a href="{{ url('/reforma') }}" class="cursor-pointer">
-                    <button class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
+                    <button
+                        class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
                         REFORMA TRIBUTÁRIA
                     </button>
                 </a>
@@ -41,14 +41,17 @@
             <!-- Login and Register Buttons -->
             <div class="flex space-x-4">
                 @if (Route::has('login'))
-                @auth
-                <a href="{{ url('/dashboard') }}" class="text-white font-bold hover:underline transition-colors cursor-pointer">Dashboard</a>
-                @else
-                <a href="{{ route('login') }}" class="text-white font-bold hover:underline transition-colors cursor-pointer">Log in</a>
-                @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="text-white font-bold hover:underline transition-colors cursor-pointer">Register</a>
-                @endif
-                @endauth
+                    @auth
+                        <a href="{{ url('/dashboard') }}"
+                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}"
+                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Log in</a>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}"
+                                class="text-white font-bold hover:underline transition-colors cursor-pointer">Register</a>
+                        @endif
+                    @endauth
                 @endif
             </div>
         </div>
@@ -117,7 +120,8 @@
                         <img src="{{ asset('images/instagram.png') }}" alt="Instagram" class="w-10 h-10">
                         <div class="text-left">
                             <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">Instagram</p>
-                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">@jpcontabil.tg</p>
+                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
+                                @jpcontabil.tg</p>
                         </div>
                     </a>
 
@@ -127,7 +131,8 @@
                         <img src="{{ asset('images/whatsapp.png') }}" alt="WhatsApp" class="w-10 h-10">
                         <div class="text-left">
                             <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">WhatsApp</p>
-                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">(49) 9 9135-2070</p>
+                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
+                                (49) 9 9135-2070</p>
                         </div>
                     </a>
                 </div>
