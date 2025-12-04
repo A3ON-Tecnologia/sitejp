@@ -25,7 +25,7 @@
 <body class="font-sans bg-page-bg dark:bg-zinc-950 text-page-text min-h-screen">
     <header
         class="bg-brand-blue text-brand-orange p-4 w-full fixed top-0 left-0 shadow-lg z-50 border-b-4 border-brand-orange">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex justify-between items-center relative">
             <!-- Logo Section -->
             <div class="flex items-center">
                 <a href="{{ url('/') }}" class="cursor-pointer">
@@ -33,34 +33,74 @@
                 </a>
             </div>
 
-            <!-- Center Button -->
-            <div>
+            <!-- Desktop Center Button -->
+            <div class="hidden md:block">
                 <a href="{{ url('/') }}" class="cursor-pointer">
                     <button
                         class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
-                        VOLTAR PARA O INÍCIO
+                        Voltar para o Início
                     </button>
                 </a>
             </div>
 
-            <!-- Login and Register Buttons -->
-            <div class="flex space-x-4">
+            <!-- Desktop Login and Register Buttons -->
+            <div class="hidden md:flex space-x-4">
                 @if (Route::has('login'))
                     @auth
                         <a href="{{ url('/dashboard') }}"
                             class="text-white font-bold hover:underline transition-colors cursor-pointer">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}"
-                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Log in</a>
+                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Área do
+                            Cliente</a>
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}"
-                                class="text-white font-bold hover:underline transition-colors cursor-pointer">Cadastro</a>
                         @endif
+                    @endauth
+                @endif
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-orange focus:outline-none p-2">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-brand-blue border-b-4 border-brand-orange shadow-lg">
+            <div class="flex flex-col items-center py-6 space-y-6">
+                <!-- Mobile Center Button -->
+                <a href="{{ url('/') }}" class="cursor-pointer">
+                    <button
+                        class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
+                        Voltar para o Início
+                    </button>
+                </a>
+
+                <!-- Mobile Login Links -->
+                @if (Route::has('login'))
+                    @auth
+                        <a href="{{ url('/dashboard') }}"
+                            class="text-white font-bold hover:underline transition-colors cursor-pointer text-lg">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}"
+                            class="text-white font-bold hover:underline transition-colors cursor-pointer text-lg">Área do
+                            Cliente</a>
                     @endauth
                 @endif
             </div>
         </div>
     </header>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
 
     <!-- Main Content -->
     <main>

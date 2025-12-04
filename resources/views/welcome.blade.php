@@ -19,8 +19,8 @@
 </head>
 
 <body class="font-sans bg-page-bg dark:bg-zinc-950 text-page-text min-h-screen">
-    <header class="bg-brand-blue text-brand-orange p-4 w-full fixed top-0 left-0 shadow-lg z-50">
-        <div class="container mx-auto flex justify-between items-center">
+    <header class="bg-brand-blue text-brand-orange p-4 w-full fixed top-0 left-0 shadow-lg z-50 border-b-4 border-brand-orange">
+        <div class="container mx-auto flex justify-between items-center relative">
             <!-- Logo Section -->
             <div class="flex items-center">
                 <a href="{{ url('/') }}" class="cursor-pointer">
@@ -28,19 +28,39 @@
                 </a>
             </div>
 
-            <!-- Login and Register Buttons -->
-            <div class="flex space-x-4">
-                @if (Route::has('login'))
-                    @auth
-                        <a href="{{ url('/dashboard') }}"
-                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}"
-                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Área do Cliente
-                        </a>
+            <!-- Center Button -->
+            <div class="hidden md:block">
+                <a href="{{ url('/reforma') }}" class="cursor-pointer">
+                    <button
+                        class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
+                        REFORMA TRIBUTÁRIA
+                    </button>
+                </a>
+            </div>
 
-                    @endauth
-                @endif
+            <!-- Hamburger Menu for Mobile -->
+            <button id="hamburger-menu" class="md:hidden text-brand-orange focus:outline-none p-2">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 w-screen bg-brand-blue border-b-4 border-brand-orange shadow-lg z-40">
+                <div class="flex flex-col items-center py-6 space-y-6">
+                    <!-- Mobile Center Button -->
+                    <a href="{{ url('/reforma') }}" class="cursor-pointer">
+                        <button
+                            class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
+                            Cronograma Reforma
+                        </button>
+                    </a>
+
+                    <!-- Mobile Login Links -->
+                    <a href="{{ route('login') }}" class="text-white font-bold hover:underline transition-colors cursor-pointer text-lg">
+                        Área do Cliente
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -139,6 +159,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
