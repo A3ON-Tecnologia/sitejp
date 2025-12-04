@@ -1,0 +1,8 @@
+{
+  "title": "Post de Teste da API",
+  "meta_description": "Testando a API REST de posts de blog",
+  "content_html": "<p>Este é um <strong>post de teste</strong> criado via API.</p><p>A API está funcionando perfeitamente!</p>",
+  "tags": ["teste", "api", "laravel"],
+  "status": "published",
+  "external_id": "test-api-001"
+}
