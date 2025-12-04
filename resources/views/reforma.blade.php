@@ -65,7 +65,8 @@
     <!-- Main Content -->
     <main>
         <!-- Title Section -->
-        <section class="relative px-6 min-h-screen flex items-start justify-center overflow-hidden pt-32">
+        <section
+            class="relative px-6 min-h-screen flex items-start justify-center overflow-hidden pt-32 border-b-4 border-brand-orange">
             <!-- Background Image -->
             <div class="absolute inset-0 w-full h-full z-0">
                 <img src="{{ asset('images/bg-2.jpg') }}" alt="Background" class="w-full h-full object-cover">
@@ -103,28 +104,23 @@
             <div class="container mx-auto">
                 <div class="flex flex-wrap justify-center gap-4">
                     <button onclick="scrollToSection(0)" id="btn-2025"
-                        class="timeline-btn active px-8 py-4 rounded-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                        style="background-color: #E91E63;">
+                        class="timeline-btn active px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2025
                     </button>
                     <button onclick="scrollToSection(1)" id="btn-2026"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                        style="background-color: #2196F3;">
+                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2026
                     </button>
                     <button onclick="scrollToSection(2)" id="btn-2027"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                        style="background-color: #9C27B0;">
+                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2027
                     </button>
                     <button onclick="scrollToSection(3)" id="btn-2028"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                        style="background-color: #FF9800;">
+                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2028-2029
                     </button>
                     <button onclick="scrollToSection(4)" id="btn-2030"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                        style="background-color: #4CAF50;">
+                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2030-2033
                     </button>
                 </div>
