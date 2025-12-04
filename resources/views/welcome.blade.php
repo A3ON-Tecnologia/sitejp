@@ -28,16 +28,6 @@
                 </a>
             </div>
 
-            <!-- Center Button -->
-            <div>
-                <a href="{{ url('/reforma') }}" class="cursor-pointer">
-                    <button
-                        class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
-                        REFORMA TRIBUTÁRIA
-                    </button>
-                </a>
-            </div>
-
             <!-- Login and Register Buttons -->
             <div class="flex space-x-4">
                 @if (Route::has('login'))
@@ -46,32 +36,20 @@
                             class="text-white font-bold hover:underline transition-colors cursor-pointer">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}"
-                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Log in</a>
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}"
-                                class="text-white font-bold hover:underline transition-colors cursor-pointer">Register</a>
-                        @endif
+                            class="text-white font-bold hover:underline transition-colors cursor-pointer">Área do Cliente
+                        </a>
+
                     @endauth
                 @endif
             </div>
         </div>
     </header>
 
-    <!-- Hero Image Section -->
-    <section class="w-full mt-20 relative">
-        <div class="w-full h-auto">
-            <img src="{{ asset('images/home1.jpg') }}" alt="Hero Banner" class="w-full h-auto object-cover">
-        </div>
-        <!-- Overlay Logo -->
-        <div class="absolute inset-0 flex items-start justify-center pt-4">
-            <img src="{{ asset('images/logo-2.png') }}" alt="Logo Overlay" class="max-w-2xl w-full px-6">
-        </div>
-    </section>
-
     <!-- Maintenance Section -->
-    <section class="py-16 px-6 bg-gradient-to-b from-page-bg to-zinc-50 dark:from-zinc-950 dark:to-zinc-900">
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-b from-page-bg to-zinc-50 dark:from-zinc-950 dark:to-zinc-900">
         <div class="container mx-auto max-w-4xl">
             <div class="text-center space-y-6">
+
                 <!-- Icon -->
                 <div class="flex justify-center">
                     <img src="{{ asset('images/manutencao.png') }}" alt="Manutenção" class="w-20 h-auto">
@@ -99,6 +77,21 @@
                     <p class="text-lg text-zinc-500 dark:text-zinc-500 font-semibold">
                         Em breve, novidades incríveis!
                     </p>
+
+                    <!-- Tax Reform CTA -->
+                    <div class="pt-6">
+                        <p class="text-lg text-brand-blue font-medium mb-4">
+                            Enquanto isso, acompanhe as mudanças da <span class="text-brand-orange font-bold">Reforma
+                                Tributária</span>.
+                        </p>
+                        <a href="{{ url('/reforma') }}" class="inline-block">
+                            <button
+                                class="bg-brand-orange text-brand-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-brand-orange-hover hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer">
+                                Cronograma Reforma Tributária
+                            </button>
+                        </a>
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>
