@@ -106,62 +106,62 @@
     <main>
         <!-- Title Section -->
         <section
-            class="relative px-6 min-h-screen flex items-start justify-center overflow-hidden pt-32 border-b-4 border-brand-orange">
+            class="relative px-3 md:px-6 h-auto md:min-h-screen flex items-start justify-center overflow-hidden pt-20 md:pt-32 border-b-4 border-brand-orange">
             <!-- Background Image -->
             <div class="absolute inset-0 w-full h-full z-0">
                 <img src="{{ asset('images/bg-2.jpg') }}" alt="Background" class="w-full h-full object-cover">
             </div>
 
             <!-- Content Overlay -->
-            <div class="container mx-auto max-w-6xl text-center relative z-10 pt-28">
-                <h1 class="text-4xl md:text-6xl font-bold text-brand-orange mb-16"
+            <div class="container mx-auto max-w-6xl text-center relative z-10 pt-8 md:pt-28">
+                <h1 class="text-2xl sm:text-3xl md:text-6xl font-bold text-brand-orange mb-4 md:mb-16"
                     style="font-family: 'Raleway', sans-serif;">
                     CRONOGRAMA REFORMA TRIBUTÁRIA
                 </h1>
 
-                <h2 class="text-4xl text-white mt-10 mb-10 text-center" style="font-family: 'Raleway', sans-serif;">
-                    Entenda as Principais Mudanças
-                </h2>
-
-                <div class="bg-brand-orange p-6 rounded-lg mt-10">
-                    <p class="text-2xl text-white text-center max-w-4xl mx-auto"
+                <div class="bg-brand-orange p-3 md:p-6 rounded-lg mt-4 md:mt-10">
+                    <p class="text-sm sm:text-base md:text-2xl text-white text-center max-w-4xl mx-auto"
                         style="font-family: 'Source Serif 4', serif;">
                         A <span class="text-dark-blue font-bold">Reforma Tributária Brasileira</span> representa a maior
                         transformação do sistema fiscal do país em décadas. Com implementação gradual entre <span
                             class="text-dark-blue font-bold">2026 e 2033</span>, ela visa simplificar a complexa
                         estrutura de impostos, unificando tributos como <span class="text-dark-blue font-bold">PIS,
-                            COFINS, ICMS e ISS</span> em um modelo mais eficiente.<br>
-                        Esta linha do tempo interativa apresenta as principais etapas da transição, seus impactos
-                        práticos e o que empresas e profissionais precisam saber para se preparar adequadamente. Clique
-                        em cada período para explorar as mudanças específicas de cada fase.
+                            COFINS, ICMS e ISS</span> em um modelo mais eficiente.
                     </p>
+                </div>
+
+                <!-- CTA Button for Mobile -->
+                <div class="md:hidden mt-6 mb-4">
+                    <a href="#carousel-container" class="inline-block bg-brand-blue text-brand-orange px-6 py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all duration-300 border-2 border-brand-orange">
+                        Confira o cronograma
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Timeline Buttons -->
-        <section class="timeline-section py-8 px-6 bg-zinc-50 dark:bg-zinc-900 sticky top-20 z-40 shadow-md">
+        <section class="timeline-section py-4 md:py-8 px-2 md:px-6 bg-zinc-50 dark:bg-zinc-900 sticky top-20 z-40 shadow-md">
             <div class="container mx-auto">
-                <div class="flex flex-wrap justify-center gap-4">
+                <div class="flex flex-wrap justify-center gap-2 md:gap-4">
                     <button onclick="scrollToSection(0)" id="btn-2025"
-                        class="timeline-btn active px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
+                        class="timeline-btn active px-3 md:px-8 py-2 md:py-4 text-xs md:text-base rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2025
                     </button>
                     <button onclick="scrollToSection(1)" id="btn-2026"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
+                        class="timeline-btn px-3 md:px-8 py-2 md:py-4 text-xs md:text-base rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2026
                     </button>
                     <button onclick="scrollToSection(2)" id="btn-2027"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
+                        class="timeline-btn px-3 md:px-8 py-2 md:py-4 text-xs md:text-base rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
                         2027
                     </button>
                     <button onclick="scrollToSection(3)" id="btn-2028"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
-                        2028-2029
+                        class="timeline-btn px-3 md:px-8 py-2 md:py-4 text-xs md:text-base rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
+                        28-29
                     </button>
                     <button onclick="scrollToSection(4)" id="btn-2030"
-                        class="timeline-btn px-8 py-4 rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
-                        2030-2033
+                        class="timeline-btn px-3 md:px-8 py-2 md:py-4 text-xs md:text-base rounded-lg font-bold bg-brand-orange text-brand-blue transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-brand-blue">
+                        30-33
                     </button>
                 </div>
             </div>
@@ -172,81 +172,78 @@
             <div class="carousel-wrapper flex transition-transform duration-500 ease-in-out" id="carousel-wrapper">
                 <!-- Slide 2025 -->
                 <div class="carousel-slide flex-shrink-0 w-screen" data-slide="0">
-                    <div class="container mx-auto max-w-6xl px-6 py-16">
-                        <h2 class="text-5xl font-bold text-brand-orange mb-4 text-center"
+                    <div class="container mx-auto max-w-6xl px-3 md:px-6 py-8 md:py-16">
+                        <h2 class="text-3xl md:text-5xl font-bold text-brand-orange mb-2 md:mb-4 text-center"
                             style="font-family: 'Raleway', sans-serif;">2025</h2>
-                        <h3 class="text-2xl font-semibold text-brand-blue mb-12 text-center"
+                        <h3 class="text-lg md:text-2xl font-semibold text-brand-blue mb-6 md:mb-12 text-center"
                             style="font-family: 'Raleway', sans-serif;">O que muda</h3>
 
-                        <div class="bg-white dark:bg-zinc-800 rounded-2xl p-10 shadow-2xl border-4 border-brand-orange">
+                        <div class="bg-white dark:bg-zinc-800 rounded-2xl p-4 md:p-10 shadow-2xl border-4 border-brand-orange">
                             <!-- Main Title -->
-                            <div class="mb-8 pb-6 border-b-2 border-brand-orange/30">
-                                <h4 class="text-3xl font-bold text-brand-blue mb-2 text-center"
+                            <div class="mb-4 md:mb-8 pb-3 md:pb-6 border-b-2 border-brand-orange/30">
+                                <h4 class="text-xl md:text-3xl font-bold text-brand-blue mb-1 md:mb-2 text-center"
                                     style="font-family: 'Raleway', sans-serif;">
                                     Início do Projeto Piloto
                                 </h4>
-                                <p class="text-xl text-brand-orange font-semibold text-center">
-                                    📅 Início oficial em <span class="text-2xl">07/07/2025</span>
+                                <p class="text-sm md:text-xl text-brand-orange font-semibold text-center">
+                                    📅 Início oficial em <span class="text-lg md:text-2xl">07/07/2025</span>
                                 </p>
                             </div>
 
                             <!-- Content Grid -->
-                            <div class="space-y-6">
+                            <div class="space-y-3 md:space-y-6">
                                 <!-- NFe adaptada -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-3 flex items-center gap-2">
-                                        <span class="text-2xl">📄</span>
-                                        NFe adaptada (CBS/IBS/IS)
+                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-3 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">📄</span>
+                                        <span>NFe adaptada (CBS/IBS/IS)</span>
                                     </h5>
-                                    <p class="text-base text-zinc-700 dark:text-zinc-300 ml-8">
-                                        Liberação do modelo 55 com <span class="font-semibold text-brand-blue">CST
-                                            0000</span> e <span class="font-semibold text-brand-blue">cClassTrib
-                                            000001</span>
+                                    <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300 ml-6 md:ml-8">
+                                        Liberação do modelo 55 com <span class="font-semibold text-brand-blue">CST 0000</span> e <span class="font-semibold text-brand-blue">cClassTrib 000001</span>
                                     </p>
                                 </div>
 
                                 <!-- Apuração Assistida -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-3 flex items-center gap-2">
-                                        <span class="text-2xl">🧮</span>
-                                        Apuração Assistida (AA)
+                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-3 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">🧮</span>
+                                        <span>Apuração Assistida (AA)</span>
                                     </h5>
-                                    <p class="text-base text-zinc-700 dark:text-zinc-300 ml-8">
+                                    <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300 ml-6 md:ml-8">
                                         Processamento automático de débitos e créditos da CBS
                                     </p>
                                 </div>
 
                                 <!-- Simuladores -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-3 flex items-center gap-2">
-                                        <span class="text-2xl">🔧</span>
-                                        Simuladores (DFe e Pagamentos)
+                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-3 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">🔧</span>
+                                        <span>Simuladores (DFe e Pagamentos)</span>
                                     </h5>
-                                    <p class="text-base text-zinc-700 dark:text-zinc-300 ml-8">
+                                    <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300 ml-6 md:ml-8">
                                         Emissão de NFe e DARF de teste
                                     </p>
                                 </div>
 
                                 <!-- Split Payment -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-3 flex items-center gap-2">
-                                        <span class="text-2xl">💳</span>
-                                        Split Payment
+                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-3 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">💳</span>
+                                        <span>Split Payment</span>
                                     </h5>
-                                    <p class="text-base text-zinc-700 dark:text-zinc-300 ml-8">
-                                        Recurso definido, mas <span class="font-semibold text-brand-orange">ainda não
-                                            disponível para testes</span>
+                                    <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300 ml-6 md:ml-8">
+                                        Recurso definido, mas <span class="font-semibold text-brand-orange">ainda não disponível para testes</span>
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Footer Note -->
-                            <div class="mt-8 pt-6 border-t-2 border-brand-orange/30">
-                                <p class="text-sm text-center text-zinc-500 dark:text-zinc-400 italic">
+                            <div class="mt-4 md:mt-8 pt-3 md:pt-6 border-t-2 border-brand-orange/30">
+                                <p class="text-xs md:text-sm text-center text-zinc-500 dark:text-zinc-400 italic">
                                     ⚠️ Fase inicial de testes e adaptação dos sistemas
                                 </p>
                             </div>
@@ -256,85 +253,81 @@
 
                 <!-- Slide 2026 -->
                 <div class="carousel-slide flex-shrink-0 w-screen" data-slide="1">
-                    <div class="container mx-auto max-w-6xl px-6 py-16">
-                        <h2 class="text-5xl font-bold text-brand-orange mb-4 text-center"
+                    <div class="container mx-auto max-w-6xl px-3 md:px-6 py-8 md:py-16">
+                        <h2 class="text-3xl md:text-5xl font-bold text-brand-orange mb-2 md:mb-4 text-center"
                             style="font-family: 'Raleway', sans-serif;">2026</h2>
-                        <h3 class="text-2xl font-semibold text-brand-blue mb-12 text-center"
+                        <h3 class="text-lg md:text-2xl font-semibold text-brand-blue mb-6 md:mb-12 text-center"
                             style="font-family: 'Raleway', sans-serif;">O que muda</h3>
 
                         <div
-                            class="bg-white dark:bg-zinc-800 rounded-2xl p-10 shadow-2xl border-4 border-brand-orange">
+                            class="bg-white dark:bg-zinc-800 rounded-2xl p-4 md:p-10 shadow-2xl border-4 border-brand-orange">
                             <!-- Main Title -->
-                            <div class="mb-8 pb-6 border-b-2 border-brand-orange/30">
-                                <h4 class="text-3xl font-bold text-brand-blue mb-2 text-center"
+                            <div class="mb-4 md:mb-8 pb-3 md:pb-6 border-b-2 border-brand-orange/30">
+                                <h4 class="text-xl md:text-3xl font-bold text-brand-blue mb-1 md:mb-2 text-center"
                                     style="font-family: 'Raleway', sans-serif;">
                                     Entrada em Vigor das Primeiras Mudanças
                                 </h4>
-                                <p class="text-xl text-brand-orange font-semibold text-center">
-                                    📅 Vigência a partir de <span class="text-2xl">01/01/2026</span>
+                                <p class="text-sm md:text-xl text-brand-orange font-semibold text-center">
+                                    📅 Vigência a partir de <span class="text-lg md:text-2xl">01/01/2026</span>
                                 </p>
                             </div>
 
                             <!-- Content Grid -->
-                            <div class="space-y-6">
+                            <div class="space-y-3 md:space-y-6">
                                 <!-- NFe / NFCe -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">📋</span>
-                                        NFe / NFCe
+                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">📋</span>
+                                        <span>NFe / NFCe</span>
                                     </h5>
-                                    <div class="ml-8 space-y-2">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                            <span class="font-semibold text-brand-orange">✓</span> As NFe/NFCe passam a
-                                            ser <span class="font-bold text-brand-blue">confissão de dívida</span>
+                                    <div class="ml-6 md:ml-8 space-y-1 md:space-y-2">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                            <span class="font-semibold text-brand-orange">✓</span> As NFe/NFCe passam a ser <span class="font-bold text-brand-blue">confissão de dívida</span>
                                         </p>
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                            <span class="font-semibold text-brand-orange">✓</span> Proibição de NFCe
-                                            para pessoa jurídica
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                            <span class="font-semibold text-brand-orange">✓</span> Proibição de NFCe para pessoa jurídica
                                         </p>
                                     </div>
                                 </div>
 
                                 <!-- Nota Fiscal de Serviços -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">📝</span>
-                                        Nota Fiscal de Serviços
+                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">📝</span>
+                                        <span>Nota Fiscal de Serviços</span>
                                     </h5>
-                                    <div class="ml-8 space-y-2">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                            <span class="font-semibold text-brand-orange">✓</span> Padrão Nacional da
-                                            Nota fiscal de Serviços
+                                    <div class="ml-6 md:ml-8 space-y-1 md:space-y-2">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                            <span class="font-semibold text-brand-orange">✓</span> Padrão Nacional da Nota fiscal de Serviços
                                         </p>
                                     </div>
                                 </div>
 
                                 <!-- CIB obrigatório -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">🔐</span>
-                                        CIB obrigatório
+                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">🔐</span>
+                                        <span>CIB obrigatório</span>
                                     </h5>
-                                    <div class="ml-8">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                            Entra em Vigor a partir de <span
-                                                class="font-bold text-brand-blue">01/01/2026</span>
+                                    <div class="ml-6 md:ml-8">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                            Entra em Vigor a partir de <span class="font-bold text-brand-blue">01/01/2026</span>
                                         </p>
                                     </div>
                                 </div>
 
                                 <!-- Piloto da Reforma -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">🧪</span>
-                                        Piloto da Reforma
+                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">🧪</span>
+                                        <span>Piloto da Reforma</span>
                                     </h5>
-                                    <div class="ml-8">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
+                                    <div class="ml-6 md:ml-8">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
                                             Testes até <span class="font-bold text-brand-orange">31/12/2026</span>
                                         </p>
                                     </div>
@@ -342,13 +335,13 @@
 
                                 <!-- Novos CST/cClassTrib -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">🔢</span>
-                                        Novos CST/cClassTrib
+                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">🔢</span>
+                                        <span>Novos CST/cClassTrib</span>
                                     </h5>
-                                    <div class="ml-8">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
+                                    <div class="ml-6 md:ml-8">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
                                             Expansão dos cenários tributários
                                         </p>
                                     </div>
@@ -356,13 +349,13 @@
 
                                 <!-- Split Payment -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">💳</span>
-                                        Split Payment
+                                    class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">💳</span>
+                                        <span>Split Payment</span>
                                     </h5>
-                                    <div class="ml-8">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
+                                    <div class="ml-6 md:ml-8">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
                                             Preparação ampliada
                                         </p>
                                     </div>
@@ -370,17 +363,16 @@
 
                                 <!-- CNPJ Alfanumérico -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">🔤</span>
-                                        CNPJ Alfanumérico
+                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">🔤</span>
+                                        <span>CNPJ Alfanumérico</span>
                                     </h5>
-                                    <div class="ml-8 space-y-2">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                            <span class="font-semibold text-brand-orange">A partir de Julho
-                                                2026:</span>
+                                    <div class="ml-6 md:ml-8 space-y-1 md:space-y-2">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                            <span class="font-semibold text-brand-orange">A partir de Julho 2026:</span>
                                         </p>
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300 pl-4">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300 pl-4">
                                             Quem já está inscrito no CNPJ permanecerá com o seu número válido
                                         </p>
                                     </div>
@@ -388,8 +380,8 @@
                             </div>
 
                             <!-- Footer Note -->
-                            <div class="mt-8 pt-6 border-t-2 border-brand-orange/30">
-                                <p class="text-sm text-center text-zinc-500 dark:text-zinc-400 italic">
+                            <div class="mt-4 md:mt-8 pt-3 md:pt-6 border-t-2 border-brand-orange/30">
+                                <p class="text-xs md:text-sm text-center text-zinc-500 dark:text-zinc-400 italic">
                                     ⚠️ Ano de transição e adaptação aos novos padrões
                                 </p>
                             </div>
@@ -399,64 +391,50 @@
 
                 <!-- Slide 2027 -->
                 <div class="carousel-slide flex-shrink-0 w-screen" data-slide="2">
-                    <div class="container mx-auto max-w-6xl px-6 py-16">
-                        <h2 class="text-5xl font-bold text-brand-orange mb-4 text-center"
+                    <div class="container mx-auto max-w-6xl px-3 md:px-6 py-8 md:py-16">
+                        <h2 class="text-3xl md:text-5xl font-bold text-brand-orange mb-2 md:mb-4 text-center"
                             style="font-family: 'Raleway', sans-serif;">2027</h2>
-                        <h3 class="text-2xl font-semibold text-brand-blue mb-12 text-center"
+                        <h3 class="text-lg md:text-2xl font-semibold text-brand-blue mb-6 md:mb-12 text-center"
                             style="font-family: 'Raleway', sans-serif;">O que muda</h3>
 
                         <div
-                            class="bg-white dark:bg-zinc-800 rounded-2xl p-10 shadow-2xl border-4 border-brand-orange">
+                            class="bg-white dark:bg-zinc-800 rounded-2xl p-4 md:p-10 shadow-2xl border-4 border-brand-orange">
                             <!-- Main Title -->
-                            <div class="mb-8 pb-6 border-b-2 border-brand-orange/30">
-                                <h4 class="text-3xl font-bold text-brand-blue mb-2 text-center"
+                            <div class="mb-4 md:mb-8 pb-3 md:pb-6 border-b-2 border-brand-orange/30">
+                                <h4 class="text-xl md:text-3xl font-bold text-brand-blue mb-1 md:mb-2 text-center"
                                     style="font-family: 'Raleway', sans-serif;">
                                     Início da Transição Efetiva
                                 </h4>
-                                <p class="text-xl text-brand-orange font-semibold text-center">
+                                <p class="text-sm md:text-xl text-brand-orange font-semibold text-center">
                                     🚀 Primeiro ano de cobrança e convivência entre sistemas
                                 </p>
                             </div>
 
                             <!-- Content Grid -->
-                            <div class="space-y-6">
+                            <div class="space-y-3 md:space-y-6">
                                 <!-- Split Payment -->
                                 <div
-                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                    <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                        <span class="text-2xl">💳</span>
-                                        Split Payment
+                                    class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                    <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                        <span class="text-lg md:text-2xl">💳</span>
+                                        <span>Split Payment</span>
                                     </h5>
-                                    <div class="ml-8 space-y-3">
-                                        <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                            <span class="font-semibold text-brand-orange">Início da implementação
-                                                progressiva:</span>
+                                    <div class="ml-6 md:ml-8 space-y-2 md:space-y-3">
+                                        <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                            <span class="font-semibold text-brand-orange">Início da implementação progressiva:</span>
                                         </p>
-                                        <ul class="space-y-2 pl-4">
-                                            <li class="text-base text-zinc-700 dark:text-zinc-300">
+                                        <ul class="space-y-1 md:space-y-2 pl-4 text-xs md:text-base">
+                                            <li class="text-zinc-700 dark:text-zinc-300">
                                                 <span class="text-brand-orange mr-2">•</span>
-                                                O modelo de segregação automática do valor do tributo na liquidação
-                                                financeira começa a ser ativado em etapas
+                                                Segregação automática do tributo
                                             </li>
-                                            <li class="text-base text-zinc-700 dark:text-zinc-300">
+                                            <li class="text-zinc-700 dark:text-zinc-300">
                                                 <span class="text-brand-orange mr-2">•</span>
-                                                A implementação ocorre de modo gradual, com foco em setores e meios de
-                                                pagamento preparados
+                                                Implementação gradual em setores
                                             </li>
-                                            <li class="text-base text-zinc-700 dark:text-zinc-300">
+                                            <li class="text-zinc-700 dark:text-zinc-300">
                                                 <span class="text-brand-orange mr-2">•</span>
-                                                A tecnologia e os operadores financeiros começam a entrar no ambiente de
-                                                conformidade real
-                                            </li>
-                                            <li class="text-base text-zinc-700 dark:text-zinc-300">
-                                                <span class="text-brand-orange mr-2">•</span>
-                                                <span class="font-bold text-brand-blue">Não há obrigatoriedade plena
-                                                    para todos os contribuintes</span>
-                                            </li>
-                                            <li class="text-base text-zinc-700 dark:text-zinc-300">
-                                                <span class="text-brand-orange mr-2">•</span>
-                                                Não é a fase "universal" do split — essa entra mais adiante na transição
-                                                do IVA dual
+                                                <span class="font-bold text-brand-blue">Não é obrigatório ainda</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -569,61 +547,59 @@
 
                 <!-- Slide 2028-2029 -->
                 <div class="carousel-slide flex-shrink-0 w-screen" data-slide="3">
-                    <div class="container mx-auto max-w-6xl px-6 py-16">
-                        <h2 class="text-5xl font-bold text-brand-orange mb-4 text-center"
+                    <div class="container mx-auto max-w-6xl px-3 md:px-6 py-8 md:py-16">
+                        <h2 class="text-3xl md:text-5xl font-bold text-brand-orange mb-2 md:mb-4 text-center"
                             style="font-family: 'Raleway', sans-serif;">2028-2029</h2>
-                        <h3 class="text-2xl font-semibold text-brand-blue mb-12 text-center"
+                        <h3 class="text-lg md:text-2xl font-semibold text-brand-blue mb-6 md:mb-12 text-center"
                             style="font-family: 'Raleway', sans-serif;">O que muda</h3>
 
                         <div
-                            class="bg-white dark:bg-zinc-800 rounded-2xl p-10 shadow-2xl border-4 border-brand-orange">
+                            class="bg-white dark:bg-zinc-800 rounded-2xl p-4 md:p-10 shadow-2xl border-4 border-brand-orange">
                             <!-- Main Title -->
-                            <div class="mb-8 pb-6 border-b-2 border-brand-orange/30">
-                                <h4 class="text-3xl font-bold text-brand-blue mb-2 text-center"
+                            <div class="mb-4 md:mb-8 pb-3 md:pb-6 border-b-2 border-brand-orange/30">
+                                <h4 class="text-xl md:text-3xl font-bold text-brand-blue mb-1 md:mb-2 text-center"
                                     style="font-family: 'Raleway', sans-serif;">
                                     Pico da Transição
                                 </h4>
-                                <p class="text-xl text-brand-orange font-semibold text-center">
+                                <p class="text-sm md:text-xl text-brand-orange font-semibold text-center">
                                     ⚡ Período de maior complexidade operacional
                                 </p>
                             </div>
 
                             <!-- 2028 Section -->
-                            <div class="mb-10">
-                                <div class="bg-brand-blue/10 rounded-xl p-6 mb-6">
-                                    <h4 class="text-2xl font-bold text-brand-blue text-center mb-2"
+                            <div class="mb-6 md:mb-10">
+                                <div class="bg-brand-blue/10 rounded-xl p-4 md:p-6 mb-4 md:mb-6">
+                                    <h4 class="text-xl md:text-2xl font-bold text-brand-blue text-center mb-1 md:mb-2"
                                         style="font-family: 'Raleway', sans-serif;">
                                         📅 2028
                                     </h4>
                                 </div>
 
-                                <div class="space-y-6">
+                                <div class="space-y-3 md:space-y-6">
                                     <!-- CBS em alíquota cheia -->
                                     <div
-                                        class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
-                                        <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                            <span class="text-2xl">💯</span>
-                                            CBS em alíquota cheia
+                                        class="bg-gradient-to-r from-brand-blue/5 to-brand-orange/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-blue hover:shadow-lg transition-shadow duration-300">
+                                        <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                            <span class="text-lg md:text-2xl">💯</span>
+                                            <span>CBS em alíquota cheia</span>
                                         </h5>
-                                        <div class="ml-8">
-                                            <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                                A CBS deixa a fase de alíquota reduzida e passa a ser cobrada em sua
-                                                <span class="font-bold text-brand-blue">alíquota plena</span>
+                                        <div class="ml-6 md:ml-8">
+                                            <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                                CBS passa a ser cobrada em sua <span class="font-bold text-brand-blue">alíquota plena</span>
                                             </p>
                                         </div>
                                     </div>
 
                                     <!-- Redução adicional do PIS/COFINS -->
                                     <div
-                                        class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
-                                        <h5 class="text-xl font-bold text-brand-blue mb-4 flex items-center gap-2">
-                                            <span class="text-2xl">📉</span>
-                                            Redução adicional do PIS/COFINS
+                                        class="bg-gradient-to-r from-brand-orange/5 to-brand-blue/5 rounded-xl p-3 md:p-6 border-l-4 border-brand-orange hover:shadow-lg transition-shadow duration-300">
+                                        <h5 class="text-sm md:text-xl font-bold text-brand-blue mb-2 md:mb-4 flex items-center gap-2">
+                                            <span class="text-lg md:text-2xl">📉</span>
+                                            <span>Redução adicional de PIS/COFINS</span>
                                         </h5>
-                                        <div class="ml-8">
-                                            <p class="text-base text-zinc-700 dark:text-zinc-300">
-                                                Avança a <span class="font-bold text-brand-orange">substituição
-                                                    definitiva de PIS e COFINS pela CBS</span>
+                                        <div class="ml-6 md:ml-8">
+                                            <p class="text-xs md:text-base text-zinc-700 dark:text-zinc-300">
+                                                Avança a <span class="font-bold text-brand-orange">substituição pela CBS</span>
                                             </p>
                                         </div>
                                     </div>
@@ -836,9 +812,9 @@
                             </div>
 
                             <!-- Footer Note -->
-                            <div class="mt-8 pt-6 border-t-2 border-brand-orange/30">
-                                <p class="text-sm text-center text-zinc-500 dark:text-zinc-400 italic">
-                                    ⚠️ Período crítico: convivência plena entre sistemas antigo e novo
+                            <div class="mt-4 md:mt-8 pt-3 md:pt-6 border-t-2 border-brand-orange/30">
+                                <p class="text-xs md:text-sm text-center text-zinc-500 dark:text-zinc-400 italic">
+                                    ⚠️ Período crítico: convivência entre sistemas
                                 </p>
                             </div>
                         </div>
@@ -847,21 +823,21 @@
 
                 <!-- Slide 2030-2033 -->
                 <div class="carousel-slide flex-shrink-0 w-screen" data-slide="4">
-                    <div class="container mx-auto max-w-6xl px-6 py-16">
-                        <h2 class="text-5xl font-bold text-brand-orange mb-4 text-center"
+                    <div class="container mx-auto max-w-6xl px-3 md:px-6 py-8 md:py-16">
+                        <h2 class="text-3xl md:text-5xl font-bold text-brand-orange mb-2 md:mb-4 text-center"
                             style="font-family: 'Raleway', sans-serif;">2030-2033</h2>
-                        <h3 class="text-2xl font-semibold text-brand-blue mb-12 text-center"
+                        <h3 class="text-lg md:text-2xl font-semibold text-brand-blue mb-6 md:mb-12 text-center"
                             style="font-family: 'Raleway', sans-serif;">O que muda</h3>
 
                         <div
-                            class="bg-white dark:bg-zinc-800 rounded-2xl p-10 shadow-2xl border-4 border-brand-orange">
+                            class="bg-white dark:bg-zinc-800 rounded-2xl p-4 md:p-10 shadow-2xl border-4 border-brand-orange">
                             <!-- Main Title -->
-                            <div class="mb-8 pb-6 border-b-2 border-brand-orange/30">
-                                <h4 class="text-3xl font-bold text-brand-blue mb-2 text-center"
+                            <div class="mb-4 md:mb-8 pb-3 md:pb-6 border-b-2 border-brand-orange/30">
+                                <h4 class="text-xl md:text-3xl font-bold text-brand-blue mb-1 md:mb-2 text-center"
                                     style="font-family: 'Raleway', sans-serif;">
                                     Conclusão da Reforma
                                 </h4>
-                                <p class="text-xl text-brand-orange font-semibold text-center">
+                                <p class="text-sm md:text-xl text-brand-orange font-semibold text-center">
                                     🎯 Implantação definitiva do IVA Dual
                                 </p>
                             </div>

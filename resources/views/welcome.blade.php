@@ -94,15 +94,12 @@
 
                 <!-- Additional Info -->
                 <div class="pt-8">
-                    <p class="text-lg text-zinc-500 dark:text-zinc-500 font-semibold">
-                        Em breve, novidades incríveis!
-                    </p>
 
                     <!-- Tax Reform CTA -->
                     <div class="pt-6">
                         <p class="text-lg text-brand-blue font-medium mb-4">
                             Enquanto isso, acompanhe as mudanças da <span class="text-brand-orange font-bold">Reforma
-                                Tributária</span>.
+                                Tributária</span>:
                         </p>
                         <a href="{{ url('/reforma') }}" class="inline-block">
                             <button
