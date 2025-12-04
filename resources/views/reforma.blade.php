@@ -113,7 +113,7 @@
             </div>
 
             <!-- Content Overlay -->
-            <div class="container mx-auto max-w-6xl text-center relative z-10 pt-8 md:pt-28">
+            <div class="container mx-auto max-w-6xl text-center relative z-10 pt-8 md:pt-28 flex flex-col items-center justify-center min-h-full md:min-h-screen">
                 <h1 class="text-2xl sm:text-3xl md:text-6xl font-bold text-brand-orange mb-4 md:mb-16"
                     style="font-family: 'Raleway', sans-serif;">
                     CRONOGRAMA REFORMA TRIBUTÁRIA
@@ -130,10 +130,16 @@
                     </p>
                 </div>
 
-                <!-- CTA Button for Mobile -->
-                <div class="md:hidden mt-6 mb-4">
-                    <a href="#carousel-container" class="inline-block bg-brand-blue text-brand-orange px-6 py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all duration-300 border-2 border-brand-orange">
-                        Confira o cronograma
+                <!-- CTA Button -->
+                <div class="mt-8 md:mt-16 mb-4 md:mb-12">
+                    <a href="#carousel-container" class="inline-flex items-center gap-2 md:gap-3 bg-brand-blue text-brand-orange px-6 md:px-12 py-3 md:py-4 rounded-lg font-bold md:text-lg md:text-xl hover:bg-opacity-90 transition-all duration-300 border-2 border-brand-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                        </svg>
+                        CONFIRA O CRONOGRAMA
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                        </svg>
                     </a>
                 </div>
             </div>
