@@ -25,7 +25,7 @@
             <!-- Logo Section -->
             <div class="flex items-center">
                 <a href="{{ url('/') }}" class="cursor-pointer">
-                    <img src="{{ asset('images/logo-4.png') }}" alt="Logo" style="height: 80px; width: auto;">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" style="height: 80px; width: auto;">
                 </a>
             </div>
 
@@ -168,81 +168,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Values Card -->
-                    <div
-                        class="bg-gradient-to-br from-brand-blue via-brand-blue to-brand-blue-dark rounded-xl p-5 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div
-                                class="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5 md:h-6 md:w-6 text-brand-orange" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-lg md:text-xl font-bold text-white">Nossos Valores</h3>
-                        </div>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-3">
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Ética</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Respeito</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Confiança</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Comprometimento</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Excelência</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Honestidade</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Responsabilidade</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Transparência</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Sustentabilidade</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Solidariedade</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Integridade</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Educação</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Inovação</p>
-                            </div>
-                            <div
-                                class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
-                                <p class="text-white font-semibold text-xs md:text-sm">Parceria</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Right Column - Maintenance & Tax Reform -->
@@ -258,47 +183,17 @@
                         <div
                             class="relative bg-gradient-to-br from-brand-orange via-orange-500 to-orange-600 rounded-xl p-5 md:p-8 shadow-2xl">
                             <div class="text-center space-y-4 md:space-y-5">
-                                <!-- Icon -->
-                                <div class="flex justify-center">
-                                    <div class="w-24 h-24 md:w-28 md:h-28 p-2">
-                                        <img src="{{ asset('images/tax.png') }}" alt="Reforma Tributária"
-                                            class="w-full h-full cursor-pointer object-contain group-hover:scale-110 transition-transform duration-300">
-                                    </div>
-                                </div>
 
                                 <!-- Title -->
                                 <div>
-                                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue mb-2">
-                                        Reforma Tributária 2025
+                                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2">
+                                        Cronograma Completo Reforma Tributária
                                     </h2>
                                     <div class="flex items-center justify-center gap-2">
                                         <div class="h-0.5 w-12 bg-white/50 rounded-full"></div>
                                         <div class="h-1.5 w-1.5 bg-white rounded-full"></div>
                                         <div class="h-0.5 w-12 bg-white/50 rounded-full"></div>
                                     </div>
-                                </div>
-
-                                <!-- Description -->
-                                <p class="text-base md:text-lg text-white/95 leading-relaxed max-w-md mx-auto">
-                                    Enquanto finalizamos o site, fique por dentro das <span
-                                        class="font-bold text-brand-blue">mudanças mais importantes</span>
-                                    que vão impactar seu negócio!
-                                </p>
-
-                                <!-- Info Box -->
-                                <div class="bg-white/15 backdrop-blur-md rounded-xl p-4 md:p-5 border border-white/20">
-                                    <div class="flex items-center justify-center gap-3 mb-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                        </svg>
-                                        <p class="text-white font-bold text-sm md:text-base">Cronograma Completo
-                                            2025-2033</p>
-                                    </div>
-                                    <p class="text-white/80 text-xs md:text-sm">
-                                        Acompanhe todas as etapas da implementação
-                                    </p>
                                 </div>
 
                                 <!-- CTA Button -->
@@ -311,21 +206,10 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                     d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                                             </svg>
-                                            Ver Cronograma Completo
+                                            ACOMPANHE AS MUDANÇAS ATUALIZADAS
                                         </span>
                                     </button>
                                 </a>
-
-                                <!-- Footer note -->
-                                <p
-                                    class="text-white/70 text-xs md:text-sm italic flex items-center justify-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                                    </svg>
-                                    Informação atualizada e confiável
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -380,6 +264,84 @@
                     </div>
                 </div>
 
+            </div>
+
+            <!-- Values Card - Full Width -->
+            <div
+                class="bg-gradient-to-br from-brand-blue via-brand-blue to-brand-blue-dark rounded-xl p-5 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 mt-8">
+                <div class="flex items-center gap-3 mb-4 justify-center">
+                    <div
+                        class="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6 text-brand-orange"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-white">Nossos Valores</h3>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-2 md:gap-3 max-w-6xl mx-auto">
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Ética</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Respeito</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Confiança</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Comprometimento</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Excelência</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Honestidade</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Responsabilidade</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Transparência</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Sustentabilidade</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Solidariedade</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Integridade</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Educação</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Inovação</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Parceria</p>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 text-center hover:bg-white/20 transition-colors duration-200">
+                        <p class="text-white font-semibold text-xs md:text-sm">Profissionalismo</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -29,7 +29,7 @@
             <!-- Logo Section -->
             <div class="flex items-center">
                 <a href="{{ url('/') }}" class="cursor-pointer">
-                    <img src="{{ asset('images/logo-4.png') }}" alt="Logo" style="height: 80px; width: auto;">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" style="height: 80px; width: auto;">
                 </a>
             </div>
 
