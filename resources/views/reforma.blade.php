@@ -277,20 +277,103 @@
     <!-- Modals for Year Timelines -->
     <!-- Modal 2025 -->
     <div id="modal-2025" class="modal-overlay hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
-        <div class="modal-content flex items-center justify-center w-full h-full p-4">
-            <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+        <div class="modal-content flex items-center justify-center w-full h-full py-8 px-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2025</h2>
                     <button type="button" onclick="closeModal('2025')"
-                        class="text-brand-orange hover:text-white transition-colors">
+                        class="text-brand-orange hover:text-white transition-colors cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-700">Conteúdo para 2025 será adicionado em breve...</p>
+                <div class="p-6 md:p-8 space-y-6">
+                    <!-- Início do Projeto Piloto -->
+                    <div
+                        class="bg-gradient-to-r from-brand-blue/10 to-brand-orange/10 rounded-xl p-5 border-l-4 border-brand-blue">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-brand-blue mb-2">Início do Projeto Piloto</h3>
+                                <p class="text-gray-700">Início oficial em <span
+                                        class="font-semibold text-brand-orange">07/07/2025</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NFe adaptada -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">NFe adaptada (CBS/IBS/IS)</h3>
+                                <p class="text-gray-600 text-sm">Liberação do modelo 55 com CST 0000 e cClassTrib
+                                    000001</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apuração Assistida -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Apuração Assistida (AA)</h3>
+                                <p class="text-gray-600 text-sm">Processamento automático de débitos e créditos da CBS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simuladores -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Simuladores (DFe e Pagamentos)</h3>
+                                <p class="text-gray-600 text-sm">Emissão de NFe e DARF de teste</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Split Payment -->
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-5">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-yellow-600 flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Split Payment</h3>
+                                <p class="text-gray-700 text-sm">Recurso definido, mas ainda não disponível para testes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,20 +381,137 @@
 
     <!-- Modal 2026 -->
     <div id="modal-2026" class="modal-overlay hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
-        <div class="modal-content flex items-center justify-center w-full h-full p-4">
-            <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+        <div class="modal-content flex items-center justify-center w-full h-full py-8 px-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2026</h2>
                     <button type="button" onclick="closeModal('2026')"
-                        class="text-brand-orange hover:text-white transition-colors">
+                        class="text-brand-orange hover:text-white transition-colors cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-700">Conteúdo para 2026 será adicionado em breve...</p>
+                <div class="p-6 md:p-8 space-y-6">
+                    <!-- NFe / NFCe -->
+                    <div
+                        class="bg-gradient-to-r from-brand-blue/10 to-brand-orange/10 rounded-xl p-5 border-l-4 border-brand-blue">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-brand-blue mb-3">NFe / NFCe</h3>
+                                <div class="space-y-2">
+                                    <p class="text-gray-700"><span class="font-semibold text-brand-orange">Em vigor a
+                                            partir de 01/01/2026:</span></p>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-600 text-sm ml-4">
+                                        <li>As NFe/NFCe passam a ser confissão de dívida</li>
+                                        <li>Proibição de NFCe para pessoa jurídica</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota Fiscal de Serviços -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-3">Nota Fiscal de Serviços</h3>
+                                <p class="text-gray-700 text-sm mb-2"><span class="font-semibold text-brand-blue">A
+                                        partir de 01/01/2026:</span></p>
+                                <p class="text-gray-600 text-sm">Padrão Nacional da Nota fiscal de Serviços</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CIB obrigatório -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">CIB obrigatório</h3>
+                                <p class="text-gray-600 text-sm">Entra em Vigor a partir de <span
+                                        class="font-semibold text-brand-orange">01/01/2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Piloto da Reforma -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-3">Piloto da Reforma</h3>
+                                <div class="space-y-2">
+                                    <p class="text-gray-600 text-sm">Testes até <span
+                                            class="font-semibold text-brand-blue">31/12/2026</span></p>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-600 text-sm ml-4">
+                                        <li>Novos CST/cClassTrib</li>
+                                        <li>Expansão dos cenários tributários</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Split Payment -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Split Payment</h3>
+                                <p class="text-gray-600 text-sm">Preparação ampliada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CNPJ Alfanumérico -->
+                    <div class="bg-green-50 border border-green-200 rounded-xl p-5">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-3">CNPJ Alfanumérico</h3>
+                                <div class="space-y-2">
+                                    <p class="text-gray-700 text-sm"><span class="font-semibold text-green-700">A
+                                            partir de Julho 2026:</span></p>
+                                    <p class="text-gray-600 text-sm">Quem já está inscrito no CNPJ permanecerá com o
+                                        seu número válido</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -319,20 +519,154 @@
 
     <!-- Modal 2027 -->
     <div id="modal-2027" class="modal-overlay hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
-        <div class="modal-content flex items-center justify-center w-full h-full p-4">
-            <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+        <div class="modal-content flex items-center justify-center w-full h-full py-8 px-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2027</h2>
                     <button type="button" onclick="closeModal('2027')"
-                        class="text-brand-orange hover:text-white transition-colors">
+                        class="text-brand-orange hover:text-white transition-colors cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-700">Conteúdo para 2027 será adicionado em breve...</p>
+                <div class="p-6 md:p-8 space-y-6">
+                    <!-- Split Payment -->
+                    <div
+                        class="bg-gradient-to-r from-brand-blue/10 to-brand-orange/10 rounded-xl p-5 border-l-4 border-brand-blue">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-brand-blue mb-3">Split Payment</h3>
+                                <div class="space-y-3">
+                                    <p class="text-gray-700"><span class="font-semibold text-brand-orange">Início da
+                                            implementação progressiva:</span></p>
+                                    <ul class="list-disc list-inside space-y-2 text-gray-600 text-sm ml-4">
+                                        <li>O modelo de segregação automática do valor do tributo na liquidação
+                                            financeira começa a ser ativado em etapas</li>
+                                        <li>A implementação ocorre de modo gradual, com foco em setores e meios de
+                                            pagamento preparados</li>
+                                        <li>A tecnologia e os operadores financeiros começam a entrar no ambiente de
+                                            conformidade real</li>
+                                        <li class="font-semibold text-brand-blue">Não há obrigatoriedade plena para
+                                            todos os contribuintes</li>
+                                        <li class="italic">Não é a fase "universal" do split — essa entra mais adiante
+                                            na transição do IVA dual</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Início da Cobrança da CBS -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Início da Cobrança da CBS (parcial)
+                                </h3>
+                                <p class="text-gray-600 text-sm">Começa a cobrança da CBS com alíquota reduzida, fase
+                                    inicial da transição</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redução gradual de PIS/COFINS -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Redução gradual de PIS/COFINS</h3>
+                                <p class="text-gray-600 text-sm">PIS e COFINS começam a ser substituídos parcialmente
+                                    pela CBS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Primeiro ano de convivência real -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Primeiro ano de convivência real entre
+                                    sistemas</h3>
+                                <p class="text-gray-600 text-sm">Operações passam a ter efeitos financeiros simultâneos
+                                    no modelo antigo e no novo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ampliação da base de creditamento -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Ampliação da base de creditamento</h3>
+                                <p class="text-gray-600 text-sm">Crédito da CBS passa a seguir a lógica plena da não
+                                    cumulatividade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ajuste das alíquotas -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Ajuste das alíquotas de referência
+                                </h3>
+                                <p class="text-gray-600 text-sm">Alíquotas da CBS são recalibradas com base na
+                                    arrecadação real</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transição federativa -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0 mt-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Transição federativa para o IBS</h3>
+                                <p class="text-gray-700 text-sm">União inicia a transferência progressiva das receitas
+                                    do ICMS/ISS para o IBS</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -340,20 +674,311 @@
 
     <!-- Modal 2028/2029 -->
     <div id="modal-2028-2029" class="modal-overlay hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
-        <div class="modal-content flex items-center justify-center w-full h-full p-4">
-            <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+        <div class="modal-content flex items-center justify-center w-full h-full py-8 px-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2028/2029</h2>
                     <button type="button" onclick="closeModal('2028-2029')"
-                        class="text-brand-orange hover:text-white transition-colors">
+                        class="text-brand-orange hover:text-white transition-colors cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-700">Conteúdo para 2028/2029 será adicionado em breve...</p>
+                <div class="p-6 md:p-8 space-y-8">
+                    <!-- 2028 Section -->
+                    <div class="border-b border-gray-300 pb-8">
+                        <h3 class="text-2xl font-bold text-brand-blue mb-6 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-brand-orange" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            2028
+                        </h3>
+                        <div class="space-y-5">
+                            <!-- CBS em alíquota cheia -->
+                            <div
+                                class="bg-gradient-to-r from-brand-blue/10 to-brand-orange/10 rounded-xl p-5 border-l-4 border-brand-blue">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-brand-blue mb-2">CBS em alíquota cheia</h4>
+                                        <p class="text-gray-600 text-sm">A CBS deixa a fase de alíquota reduzida e
+                                            passa a ser cobrada em sua alíquota plena</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Redução adicional do PIS/COFINS -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-gray-900 mb-2">Redução adicional do
+                                            PIS/COFINS</h4>
+                                        <p class="text-gray-600 text-sm">Avança a substituição definitiva de PIS e
+                                            COFINS pela CBS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Expansão do Split Payment -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-gray-900 mb-2">Expansão do Split Payment</h4>
+                                        <p class="text-gray-600 text-sm">O Split Payment amplia o escopo de aplicação,
+                                            cobrindo setores e meios de pagamento adicionais</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <!-- IBS em fase de teste ampliada -->
+                                <div
+                                    class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-gray-900 mb-1 text-sm">IBS em fase de teste
+                                                ampliada</h4>
+                                            <p class="text-gray-600 text-xs">Estados e Municípios avançam na unificação
+                                                operacional do IBS</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Transição federativa aprofundada -->
+                                <div
+                                    class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                        </svg>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-gray-900 mb-1 text-sm">Transição federativa
+                                                aprofundada</h4>
+                                            <p class="text-gray-600 text-xs">Maior parcela do ICMS/ISS migra para o IBS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Consolidação da não cumulatividade plena -->
+                            <div class="bg-green-50 border border-green-200 rounded-xl p-5">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-gray-900 mb-2">Consolidação da não
+                                            cumulatividade plena</h4>
+                                        <p class="text-gray-700 text-sm">O sistema CBS/IBS passa a refletir, em escala
+                                            maior, o modelo de crédito financeiro universal</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2029 Section -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-brand-orange mb-6 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-brand-blue" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            2029
+                        </h3>
+                        <div class="space-y-5">
+                            <!-- Integração total dos DF-e -->
+                            <div
+                                class="bg-gradient-to-r from-brand-orange/10 to-brand-blue/10 rounded-xl p-5 border-l-4 border-brand-orange">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-brand-orange mb-2">Integração total dos DF-e
+                                            com o IVA Dual</h4>
+                                        <p class="text-gray-600 text-sm">Documentos fiscais eletrônicos passam a rodar
+                                            majoritariamente já no modelo CBS/IBS/IS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ambiente fiscal híbrido -->
+                            <div class="bg-red-50 border-2 border-red-300 rounded-xl p-5">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-red-600 flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-red-700 mb-2">Ambiente fiscal híbrido (pico
+                                            da transição)</h4>
+                                        <p class="text-red-800 text-sm font-semibold mb-2">2029 é o ano com maior
+                                            complexidade operacional:</p>
+                                        <p class="text-gray-700 text-sm">Convivem ICMS/ISS + IBS e PIS/COFINS residuais
+                                            + CBS plena</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- IBS inicia cobrança -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-gray-900 mb-2">IBS inicia cobrança com
+                                            alíquota reduzida</h4>
+                                        <p class="text-gray-600 text-sm">Começa a cobrança do IBS em fase inicial, com
+                                            alíquota reduzida, dando início à convivência real entre ICMS/ISS e IBS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <!-- Redução proporcional de ICMS e ISS -->
+                                <div
+                                    class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                                        </svg>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-gray-900 mb-1 text-sm">Redução proporcional de
+                                                ICMS e ISS</h4>
+                                            <p class="text-gray-600 text-xs">Parte da arrecadação do ICMS/ISS começa a
+                                                ser progressivamente substituída pelo IBS</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CBS totalmente implantada -->
+                                <div
+                                    class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-gray-900 mb-1 text-sm">CBS totalmente implantada
+                                            </h4>
+                                            <p class="text-gray-600 text-xs">A CBS já opera em regime pleno,
+                                                substituindo PIS/COFINS</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Split Payment em expansão avançada -->
+                                <div
+                                    class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-gray-900 mb-1 text-sm">Split Payment em expansão
+                                                avançada</h4>
+                                            <p class="text-gray-600 text-xs">Amplia sua aplicação para um número maior
+                                                de setores e operações</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Transição federativa intensificada -->
+                                <div
+                                    class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5 text-brand-blue flex-shrink-0 mt-0.5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-gray-900 mb-1 text-sm">Transição federativa
+                                                intensificada</h4>
+                                            <p class="text-gray-600 text-xs">Receitas estaduais e municipais migram de
+                                                maneira mais acelerada para o Comitê Gestor do IBS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aprimoramento da não cumulatividade -->
+                            <div class="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-lg font-bold text-gray-900 mb-2">Aprimoramento da não
+                                            cumulatividade</h4>
+                                        <p class="text-gray-700 text-sm">O compartilhamento de créditos entre CBS e IBS
+                                            começa a refletir a lógica integrada do IVA dual</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,20 +986,248 @@
 
     <!-- Modal 2030-2033 -->
     <div id="modal-2030-2033" class="modal-overlay hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
-        <div class="modal-content flex items-center justify-center w-full h-full p-4">
-            <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+        <div class="modal-content flex items-center justify-center w-full h-full py-8 px-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2030-2033</h2>
                     <button type="button" onclick="closeModal('2030-2033')"
-                        class="text-brand-orange hover:text-white transition-colors">
+                        class="text-brand-orange hover:text-white transition-colors cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-700">Conteúdo para 2030-2033 será adicionado em breve...</p>
+                <div class="p-6 md:p-8 space-y-8">
+                    <!-- Header Introduction -->
+                    <div
+                        class="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-300 rounded-xl p-6 text-center">
+                        <h3 class="text-2xl font-bold text-green-700 mb-2">Fase Final da Transição</h3>
+                        <p class="text-gray-700">2030-2033: Conclusão completa do IVA Dual Brasileiro</p>
+                    </div>
+
+                    <!-- 2030 Section -->
+                    <div class="border-b border-gray-300 pb-8">
+                        <h3 class="text-2xl font-bold text-brand-blue mb-6 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-brand-orange" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            2030
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div
+                                class="bg-gradient-to-r from-brand-blue/10 to-brand-orange/10 rounded-xl p-4 border-l-4 border-brand-blue">
+                                <h4 class="font-bold text-brand-blue mb-2">IBS com alíquota crescente</h4>
+                                <p class="text-gray-600 text-sm">O IBS aumenta sua participação, reduzindo ainda mais
+                                    ICMS e ISS</p>
+                            </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                <h4 class="font-bold text-gray-900 mb-2">Aprimoramento do modelo dual</h4>
+                                <p class="text-gray-600 text-sm">CBS plena + IBS crescente formam o núcleo do IVA
+                                    brasileiro</p>
+                            </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                <h4 class="font-bold text-gray-900 mb-2">Redução significativa de ICMS e ISS</h4>
+                                <p class="text-gray-600 text-sm">Estados e municípios iniciam dependência menor do
+                                    modelo antigo</p>
+                            </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                <h4 class="font-bold text-gray-900 mb-2">Split Payment quase universal</h4>
+                                <p class="text-gray-600 text-sm">Mecanismo atinge grande parte das operações de
+                                    pagamento</p>
+                            </div>
+                            <div class="bg-green-50 border border-green-200 rounded-xl p-4">
+                                <h4 class="font-bold text-gray-900 mb-2">Harmonização dos créditos</h4>
+                                <p class="text-gray-600 text-sm">Modelo de crédito financeiro totalmente consolidado
+                                    entre CBS e IBS</p>
+                            </div>
+                            <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                                <h4 class="font-bold text-gray-900 mb-2">Integração avançada dos DF-e</h4>
+                                <p class="text-gray-600 text-sm">Todos os documentos fiscais operam praticamente só no
+                                    modelo CBS/IBS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2031 Section -->
+                    <div class="border-b border-gray-300 pb-8">
+                        <h3 class="text-2xl font-bold text-brand-orange mb-6 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-brand-blue" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            2031
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div
+                                class="bg-gradient-to-r from-brand-orange/10 to-brand-blue/10 rounded-xl p-4 border-l-4 border-brand-orange">
+                                <h4 class="font-bold text-brand-orange mb-2">IBS em nova fase de aumento gradual</h4>
+                                <p class="text-gray-600 text-sm">IBS segue crescendo conforme o cronograma anual</p>
+                            </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                <h4 class="font-bold text-gray-900 mb-2">Queda acentuada de ICMS e ISS</h4>
+                                <p class="text-gray-600 text-sm">Antigos tributos sobre consumo se tornam residuais</p>
+                            </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                <h4 class="font-bold text-gray-900 mb-2">Transparência tributária fortalecida</h4>
+                                <p class="text-gray-600 text-sm">Nota fiscal evidencia completamente CBS, IBS e IS</p>
+                            </div>
+                            <div
+                                class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                <h4 class="font-bold text-gray-900 mb-2">Split Payment em plena expansão</h4>
+                                <p class="text-gray-600 text-sm">Aplicação quase total no varejo, serviços e pagamentos
+                                    digitais</p>
+                            </div>
+                            <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                                <h4 class="font-bold text-gray-900 mb-2">Integração federativa consolidada</h4>
+                                <p class="text-gray-600 text-sm">Comitê Gestor do IBS assume praticamente toda a
+                                    coordenação</p>
+                            </div>
+                            <div class="bg-green-50 border border-green-200 rounded-xl p-4">
+                                <h4 class="font-bold text-gray-900 mb-2">Simplificação operacional máxima</h4>
+                                <p class="text-gray-600 text-sm">Ambiente fiscal opera majoritariamente em lógica de
+                                    IVA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2032 Section -->
+                    <div class="border-b border-gray-300 pb-8">
+                        <h3 class="text-2xl font-bold text-brand-blue mb-6 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-brand-orange" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            2032
+                        </h3>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-gradient-to-r from-brand-blue/10 to-brand-orange/10 rounded-xl p-5 border-l-4 border-brand-blue">
+                                <h4 class="text-lg font-bold text-brand-blue mb-2">IBS próximo da alíquota final</h4>
+                                <p class="text-gray-600 text-sm">IBS chega perto de sua participação definitiva no
+                                    modelo</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-4">
+                                    <h4 class="font-bold text-yellow-800 mb-2">Fim funcional de ICMS e ISS</h4>
+                                    <p class="text-gray-700 text-sm">Tributos antigos tornam-se mínimos, restando
+                                        situações residuais</p>
+                                </div>
+                                <div class="bg-green-50 border border-green-300 rounded-xl p-4">
+                                    <h4 class="font-bold text-green-700 mb-2">Modelo de IVA praticamente completo</h4>
+                                    <p class="text-gray-600 text-sm">CBS + IBS passam a representar quase toda
+                                        tributação do consumo</p>
+                                </div>
+                                <div
+                                    class="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
+                                    <h4 class="font-bold text-gray-900 mb-2">Split Payment totalmente difundido</h4>
+                                    <p class="text-gray-600 text-sm">Praticamente todas as operações financeiras
+                                        utilizam o mecanismo</p>
+                                </div>
+                                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                                    <h4 class="font-bold text-gray-900 mb-2">Estabilização da arrecadação</h4>
+                                    <p class="text-gray-600 text-sm">Ajustes finais das alíquotas de equilíbrio
+                                        federativo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2033 Section - FINAL -->
+                    <div>
+                        <div
+                            class="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-xl p-6 mb-6 text-center">
+                            <h3 class="text-3xl font-bold mb-2 flex items-center justify-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                2033 - CONCLUSÃO DA REFORMA
+                            </h3>
+                            <p class="text-white/90">Ano final da transição - IVA Dual plenamente implantado</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-green-100 border-2 border-green-500 rounded-xl p-5">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-7 w-7 text-green-600 flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-xl font-bold text-green-700 mb-2">IBS atinge alíquota cheia e
+                                            definitiva</h4>
+                                        <p class="text-gray-700">Conclusão da transição; IBS substitui integralmente
+                                            ICMS/ISS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-400 rounded-xl p-5">
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-7 w-7 text-red-600 flex-shrink-0 mt-0.5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                    <div class="flex-1">
+                                        <h4 class="text-xl font-bold text-red-700 mb-2">Fim completo de ICMS, ISS, PIS
+                                            e COFINS</h4>
+                                        <p class="text-gray-700">Antigos tributos sobre consumo são encerrados</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-blue-50 border-2 border-blue-400 rounded-xl p-4">
+                                    <h4 class="font-bold text-blue-700 mb-2">IVA dual plenamente implantado</h4>
+                                    <p class="text-gray-700 text-sm">CBS e IBS passam a ser os únicos tributos sobre
+                                        consumo</p>
+                                </div>
+                                <div class="bg-green-50 border border-green-300 rounded-xl p-4">
+                                    <h4 class="font-bold text-green-700 mb-2">Modelo tributário estabilizado</h4>
+                                    <p class="text-gray-600 text-sm">Ano de funcionamento normal do novo sistema</p>
+                                </div>
+                                <div class="bg-purple-50 border border-purple-300 rounded-xl p-4">
+                                    <h4 class="font-bold text-purple-700 mb-2">Split Payment se torna padrão único</h4>
+                                    <p class="text-gray-600 text-sm">Todas as liquidações financeiras segregam
+                                        automaticamente os tributos</p>
+                                </div>
+                                <div class="bg-indigo-50 border border-indigo-300 rounded-xl p-4">
+                                    <h4 class="font-bold text-indigo-700 mb-2">Ambiente fiscal simplificado</h4>
+                                    <p class="text-gray-600 text-sm">Sistema de apuração totalmente baseado em crédito
+                                        financeiro</p>
+                                </div>
+                            </div>
+
+                            <!-- Final Message -->
+                            <div
+                                class="bg-gradient-to-r from-brand-blue to-brand-orange text-white rounded-xl p-6 text-center mt-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-3" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                </svg>
+                                <h4 class="text-2xl font-bold mb-2">Reforma Tributária Concluída</h4>
+                                <p class="text-white/90">Brasil adota oficialmente o sistema de IVA Dual moderno e
+                                    simplificado</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
