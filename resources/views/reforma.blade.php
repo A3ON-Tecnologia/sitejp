@@ -29,7 +29,7 @@
             <!-- Logo Section -->
             <div class="flex items-center">
                 <a href="{{ url('/') }}" class="cursor-pointer">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-12 w-auto">
+                    <img src="{{ asset('images/logo-4.png') }}" alt="Logo" style="height: 80px; width: auto;">
                 </a>
             </div>
 
@@ -113,7 +113,8 @@
             </div>
 
             <!-- Content Overlay -->
-            <div class="container mx-auto max-w-6xl text-center relative z-10 pt-20 md:pt-32 flex flex-col items-center justify-start min-h-full md:min-h-screen">
+            <div
+                class="container mx-auto max-w-6xl text-center relative z-10 pt-20 md:pt-32 flex flex-col items-center justify-start min-h-full md:min-h-screen">
                 <h1 class="text-2xl sm:text-3xl md:text-6xl font-bold text-brand-orange mb-6 md:mb-8"
                     style="font-family: 'Raleway', sans-serif;">
                     CRONOGRAMA REFORMA TRIBUTÁRIA
@@ -121,23 +122,23 @@
 
                 <!-- Year Filter Buttons -->
                 <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12 px-2">
-                    <button type="button" onclick="openModal('2025')" 
+                    <button type="button" onclick="openModal('2025')"
                         class="px-4 md:px-8 py-3 md:py-4 text-sm md:text-lg lg:text-xl font-bold bg-brand-blue text-white border-2 border-brand-orange rounded-lg hover:text-brand-orange transition-all duration-300 cursor-pointer hover:scale-115 hover:shadow-2xl">
                         2025
                     </button>
-                    <button type="button" onclick="openModal('2026')" 
+                    <button type="button" onclick="openModal('2026')"
                         class="px-4 md:px-8 py-3 md:py-4 text-sm md:text-lg lg:text-xl font-bold bg-brand-blue text-white border-2 border-brand-orange rounded-lg hover:text-brand-orange transition-all duration-300 cursor-pointer hover:scale-115 hover:shadow-2xl">
                         2026
                     </button>
-                    <button type="button" onclick="openModal('2027')" 
+                    <button type="button" onclick="openModal('2027')"
                         class="px-4 md:px-8 py-3 md:py-4 text-sm md:text-lg lg:text-xl font-bold bg-brand-blue text-white border-2 border-brand-orange rounded-lg hover:text-brand-orange transition-all duration-300 cursor-pointer hover:scale-115 hover:shadow-2xl">
                         2027
                     </button>
-                    <button type="button" onclick="openModal('2028-2029')" 
+                    <button type="button" onclick="openModal('2028-2029')"
                         class="px-4 md:px-8 py-3 md:py-4 text-sm md:text-lg lg:text-xl font-bold bg-brand-blue text-white border-2 border-brand-orange rounded-lg hover:text-brand-orange transition-all duration-300 cursor-pointer hover:scale-115 hover:shadow-2xl">
                         2028/2029
                     </button>
-                    <button type="button" onclick="openModal('2030-2033')" 
+                    <button type="button" onclick="openModal('2030-2033')"
                         class="px-4 md:px-8 py-3 md:py-4 text-sm md:text-lg lg:text-xl font-bold bg-brand-blue text-white border-2 border-brand-orange rounded-lg hover:text-brand-orange transition-all duration-300 cursor-pointer hover:scale-115 hover:shadow-2xl">
                         2030-2033
                     </button>
@@ -156,19 +157,24 @@
 
                 <!-- CTA Button -->
                 <div class="mt-8 md:mt-16 mb-4 md:mb-12">
-                    <a href="#carousel-container" class="inline-flex items-center gap-2 md:gap-3 bg-brand-blue text-brand-orange px-6 md:px-12 py-3 md:py-4 rounded-lg font-bold md:text-xl hover:bg-opacity-90 transition-all duration-300 border-2 border-brand-orange">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+                    <a href="#carousel-container"
+                        class="inline-flex items-center gap-2 md:gap-3 bg-brand-blue text-brand-orange px-6 md:px-12 py-3 md:py-4 rounded-lg font-bold md:text-xl hover:bg-opacity-90 transition-all duration-300 border-2 border-brand-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
                         </svg>
                         CONFIRA O CRONOGRAMA
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
                         </svg>
                     </a>
                 </div>
             </div>
         </section>
-       
+
     </main>
 
     <!-- Footer with Social Media -->
@@ -209,10 +215,13 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
                         <!-- Address Information -->
                         <div class="flex flex-col space-y-4">
-                            <h3 class="text-2xl font-bold text-brand-orange mb-2 text-center lg:text-left">Localização</h3>
-                            
-                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
-                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Endereço</p>
+                            <h3 class="text-2xl font-bold text-brand-orange mb-2 text-center lg:text-left">Localização
+                            </h3>
+
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">
+                                    Endereço</p>
                                 <p class="text-base text-white font-medium mb-2">JP Contábil</p>
                                 <p class="text-sm text-white/80 leading-relaxed">
                                     Av. Irmãos Piccoli, 480<br>
@@ -222,16 +231,20 @@
                                 </p>
                             </div>
 
-                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
-                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Horário de Funcionamento</p>
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Horário
+                                    de Funcionamento</p>
                                 <p class="text-sm text-white/80">
                                     Segunda a Sexta<br>
                                     <span class="text-white font-medium">08:00 - 18:00</span>
                                 </p>
                             </div>
 
-                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
-                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Contato</p>
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Contato
+                                </p>
                                 <p class="text-sm text-white/80">
                                     Telefone: <span class="text-white font-medium">(49) 9 9135-2070</span><br>
                                     Email: <span class="text-white font-medium">contato@jpcontabil.com.br</span>
@@ -240,12 +253,11 @@
                         </div>
 
                         <!-- Google Maps Embed -->
-                        <div class="w-full h-full rounded-xl overflow-hidden border-2 border-brand-orange/30 shadow-lg" style="min-height: 500px;">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.97866256896083!2d-51.2439743189634!3d-27.104058586927575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e15a143f0f4929%3A0xcdbb3ce8d2ae35aa!2sJP%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1764939313362!5m2!1spt-BR!2sbr" 
-                                style="width: 100%; height: 100%; border: none;"
-                                allowfullscreen=""
-                                loading="lazy"
+                        <div class="w-full h-full rounded-xl overflow-hidden border-2 border-brand-orange/30 shadow-lg"
+                            style="min-height: 500px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.97866256896083!2d-51.2439743189634!3d-27.104058586927575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e15a143f0f4929%3A0xcdbb3ce8d2ae35aa!2sJP%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1764939313362!5m2!1spt-BR!2sbr"
+                                style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
@@ -269,8 +281,10 @@
             <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2025</h2>
-                    <button type="button" onclick="closeModal('2025')" class="text-brand-orange hover:text-white transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <button type="button" onclick="closeModal('2025')"
+                        class="text-brand-orange hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
@@ -288,8 +302,10 @@
             <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2026</h2>
-                    <button type="button" onclick="closeModal('2026')" class="text-brand-orange hover:text-white transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <button type="button" onclick="closeModal('2026')"
+                        class="text-brand-orange hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
@@ -307,8 +323,10 @@
             <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2027</h2>
-                    <button type="button" onclick="closeModal('2027')" class="text-brand-orange hover:text-white transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <button type="button" onclick="closeModal('2027')"
+                        class="text-brand-orange hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
@@ -326,8 +344,10 @@
             <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2028/2029</h2>
-                    <button type="button" onclick="closeModal('2028-2029')" class="text-brand-orange hover:text-white transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <button type="button" onclick="closeModal('2028-2029')"
+                        class="text-brand-orange hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
@@ -345,8 +365,10 @@
             <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
                 <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-brand-blue">
                     <h2 class="text-2xl md:text-3xl font-bold text-brand-orange">Cronograma 2030-2033</h2>
-                    <button type="button" onclick="closeModal('2030-2033')" class="text-brand-orange hover:text-white transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <button type="button" onclick="closeModal('2030-2033')"
+                        class="text-brand-orange hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
