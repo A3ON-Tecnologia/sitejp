@@ -83,7 +83,7 @@
         class="pt-28 md:pt-36 pb-10 md:pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950">
         <div class="container mx-auto max-w-7xl">
             <!-- Section Header -->
-            <div class="text-center mb-8 md:mb-12">
+            <div class="text-center mb-8 md:mb-12 mt-4 md:mt-0">
                 <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-blue mb-3">
                     Conheça a <span class="text-brand-orange">JP Contábil</span>
                 </h1>
@@ -260,20 +260,13 @@
                             <div class="text-center space-y-4 md:space-y-5">
                                 <!-- Icon -->
                                 <div class="flex justify-center">
-                                    <div
-                                        class="w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            class="h-8 w-8 md:h-10 md:w-10 text-white" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                        </svg>
-                                    </div>
+                                    <img src="{{ asset('images/tax.png') }}" alt="Reforma Tributária"
+                                        class="w-20 h-20 md:w-24 md:h-24 rounded-2xl cursor-pointer object-cover group-hover:scale-110 transition-transform duration-300">
                                 </div>
 
                                 <!-- Title -->
                                 <div>
-                                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2">
+                                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue mb-2">
                                         Reforma Tributária 2025
                                     </h2>
                                     <div class="flex items-center justify-center gap-2">
@@ -285,7 +278,7 @@
 
                                 <!-- Description -->
                                 <p class="text-base md:text-lg text-white/95 leading-relaxed max-w-md mx-auto">
-                                    Enquanto aguarda, fique por dentro das <span
+                                    Enquanto finalizamos o site, fique por dentro das <span
                                         class="font-bold text-brand-blue">mudanças mais importantes</span>
                                     que vão impactar seu negócio!
                                 </p>
@@ -309,7 +302,7 @@
                                 <!-- CTA Button -->
                                 <a href="{{ url('/reforma') }}" class="block">
                                     <button
-                                        class="w-full bg-white text-brand-orange px-6 md:px-8 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-zinc-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/50 hover:border-white">
+                                        class="w-full bg-white text-brand-orange px-6 md:px-8 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-zinc-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/50 hover:border-white cursor-pointer">
                                         <span class="flex items-center justify-center gap-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
                                                 viewBox="0 0 24 24" stroke="currentColor">
