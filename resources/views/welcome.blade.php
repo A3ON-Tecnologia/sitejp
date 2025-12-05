@@ -107,11 +107,11 @@
                             class="absolute -inset-1 bg-gradient-to-r from-brand-blue to-brand-orange rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-500">
                         </div>
                         <div class="relative">
-                            <img src="{{ asset('images/jp-equipe-2.JPG') }}" alt="Equipe JP Contábil"
-                                class="w-full h-auto max-h-64 md:max-h-80 rounded-2xl shadow-2xl object-cover">
+                            <img src="{{ asset('images/grupo-jp.jpg') }}" alt="Equipe JP Contábil"
+                                class="w-full h-auto max-h-64 md:max-h-80 rounded-2xl shadow-2xl object-contain bg-zinc-100 dark:bg-zinc-800">
                             <div
                                 class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-2xl p-4 md:p-5">
-                                <p class="text-white font-bold text-base md:text-lg">Nossa Equipe</p>
+                                <p class="text-white font-bold text-base md:text-lg">Equipe JP Contábil</p>
                                 <p class="text-white/90 text-xs md:text-sm">Comprometida com o seu sucesso</p>
                             </div>
                         </div>
@@ -260,8 +260,10 @@
                             <div class="text-center space-y-4 md:space-y-5">
                                 <!-- Icon -->
                                 <div class="flex justify-center">
-                                    <img src="{{ asset('images/tax.png') }}" alt="Reforma Tributária"
-                                        class="w-20 h-20 md:w-24 md:h-24 rounded-2xl cursor-pointer object-cover group-hover:scale-110 transition-transform duration-300">
+                                    <div class="w-24 h-24 md:w-28 md:h-28 p-2">
+                                        <img src="{{ asset('images/tax.png') }}" alt="Reforma Tributária"
+                                            class="w-full h-full cursor-pointer object-contain group-hover:scale-110 transition-transform duration-300">
+                                    </div>
                                 </div>
 
                                 <!-- Title -->
@@ -362,13 +364,7 @@
                                     class="font-semibold text-brand-blue">experiência ainda melhor</span> para você.
                             </p>
 
-                            <!-- Additional Message -->
-                            <div class="bg-zinc-50 dark:bg-zinc-700/50 rounded-lg p-4 max-w-md mx-auto">
-                                <p class="text-sm text-zinc-600 dark:text-zinc-300">
-                                    💡 <span class="font-semibold">Fique tranquilo!</span> Nossos serviços continuam
-                                    funcionando normalmente.
-                                </p>
-                            </div>
+                            <br>
 
                             <!-- Progress Bar -->
                             <div class="max-w-sm mx-auto">
