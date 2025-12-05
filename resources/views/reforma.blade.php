@@ -157,7 +157,7 @@
 
                 <!-- CTA Button -->
                 <div class="mt-8 md:mt-16 mb-4 md:mb-12">
-                    <a href="#carousel-container"
+                    <a href=""
                         class="inline-flex items-center gap-2 md:gap-3 bg-brand-blue text-brand-orange px-6 md:px-12 py-3 md:py-4 rounded-lg font-bold md:text-xl hover:bg-opacity-90 transition-all duration-300 border-2 border-brand-orange">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
@@ -176,103 +176,6 @@
         </section>
 
     </main>
-
-    <!-- Footer with Social Media -->
-    <footer class="bg-gradient-to-b from-brand-blue-dark to-brand-blue text-white py-8 w-full">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col items-center space-y-6">
-                <!-- Social Media Title -->
-                <h3 class="text-2xl font-bold text-brand-orange">Fale Conosco</h3>
-                <p class="text-sm text-white/80">Dúvidas? Entre em contato conosco</p>
-
-                <!-- Social Media Links -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/jpcontabil.tg/" target="_blank" rel="noopener noreferrer"
-                        class="flex items-center gap-4 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border-2 border-brand-orange/30 hover:border-brand-orange hover:bg-white/20 transition-all duration-300 hover:scale-105 group min-w-[280px]">
-                        <img src="{{ asset('images/instagram.png') }}" alt="Instagram" class="w-10 h-10">
-                        <div class="text-left">
-                            <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">Instagram</p>
-                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
-                                @jpcontabil.tg</p>
-                        </div>
-                    </a>
-
-                    <!-- WhatsApp -->
-                    <a href="https://wa.me/5549991352070" target="_blank" rel="noopener noreferrer"
-                        class="flex items-center gap-4 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border-2 border-brand-orange/30 hover:border-brand-orange hover:bg-white/20 transition-all duration-300 hover:scale-105 group min-w-[280px]">
-                        <img src="{{ asset('images/whatsapp.png') }}" alt="WhatsApp" class="w-10 h-10">
-                        <div class="text-left">
-                            <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">WhatsApp</p>
-                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
-                                (49) 9 9135-2070</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Address and Map Section -->
-                <div class="pt-8 w-full">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                        <!-- Address Information -->
-                        <div class="flex flex-col space-y-4">
-                            <h3 class="text-2xl font-bold text-brand-orange mb-2 text-center lg:text-left">Localização
-                            </h3>
-
-                            <div
-                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
-                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">
-                                    Endereço</p>
-                                <p class="text-base text-white font-medium mb-2">JP Contábil</p>
-                                <p class="text-sm text-white/80 leading-relaxed">
-                                    Av. Irmãos Piccoli, 480<br>
-                                    Bairro Centro<br>
-                                    Tangará - SC, 89642-000<br>
-                                    Brasil
-                                </p>
-                            </div>
-
-                            <div
-                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
-                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Horário
-                                    de Funcionamento</p>
-                                <p class="text-sm text-white/80">
-                                    Segunda a Sexta<br>
-                                    <span class="text-white font-medium">08:00 - 18:00</span>
-                                </p>
-                            </div>
-
-                            <div
-                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
-                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Contato
-                                </p>
-                                <p class="text-sm text-white/80">
-                                    Telefone: <span class="text-white font-medium">(49) 9 9135-2070</span><br>
-                                    Email: <span class="text-white font-medium">contato@jpcontabil.com.br</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Google Maps Embed -->
-                        <div class="w-full h-full rounded-xl overflow-hidden border-2 border-brand-orange/30 shadow-lg"
-                            style="min-height: 500px;">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.97866256896083!2d-51.2439743189634!3d-27.104058586927575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e15a143f0f4929%3A0xcdbb3ce8d2ae35aa!2sJP%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1764939313362!5m2!1spt-BR!2sbr"
-                                style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Copyright -->
-                <div class="pt-8 border-t border-brand-orange/20 w-full max-w-6xl text-center mx-auto">
-                    <p class="text-sm text-white/70">
-                        © {{ date('Y') }} Todos os direitos reservados
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Modals for Year Timelines -->
     <!-- Modal 2025 -->
@@ -1233,6 +1136,412 @@
         </div>
     </div>
 
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-zinc-50 via-white to-zinc-100">
+        <div class="container mx-auto max-w-4xl">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-blue mb-4">
+                    Perguntas Frequentes
+                </h2>
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <div class="h-1 w-16 md:w-24 bg-brand-orange rounded-full"></div>
+                    <div class="h-2.5 w-2.5 bg-brand-orange rounded-full"></div>
+                    <div class="h-1 w-16 md:w-24 bg-brand-orange rounded-full"></div>
+                </div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Tire suas dúvidas sobre a Reforma Tributária
+                </p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(1)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                1
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">
+                                O que é a Reforma Tributária?
+                            </h3>
+                        </div>
+                        <svg id="faq-icon-1" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-1" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p>A Reforma Tributária é uma alteração no Sistema Tributário Brasileiro, promovida pela
+                                Emenda Constitucional nº 132/2023, que visa simplificar e tornar mais justo o sistema de
+                                tributos no país, impactando diretamente cidadãos e empresas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(2)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                2
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">
+                                Quais são os principais princípios da Reforma Tributária?
+                            </h3>
+                        </div>
+                        <svg id="faq-icon-2" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-2" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p class="mb-3">Os princípios fundamentais incluem:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li><strong>Simplicidade:</strong> Normas mais claras e compreensíveis.</li>
+                                <li><strong>Transparência:</strong> Informações acessíveis sobre tributos.</li>
+                                <li><strong>Justiça Tributária:</strong> Redução das injustiças sociais na tributação.
+                                </li>
+                                <li><strong>Cooperação:</strong> Colaboração entre Fiscos e contribuintes.</li>
+                                <li><strong>Defesa do Meio Ambiente:</strong> Incentivos fiscais para atividades
+                                    ecológicas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Items 3-10 (placeholders) -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(3)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                3
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">Quais tributos serão extintos e quais
+                                novos serão criados?</h3>
+                        </div>
+                        <svg id="faq-icon-3" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-3" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p class="font-semibold mb-2">Os tributos que serão extintos incluem:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4 mb-4">
+                                <li>PIS</li>
+                                <li>COFINS</li>
+                                <li>IPI (com alíquotas zeradas)</li>
+                            </ul>
+                            <p class="font-semibold mb-2">Novos tributos que serão criados:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>CBS:</strong> Contribuição sobre Bens e Serviços, cobrada pela União.</li>
+                                <li><strong>IBS:</strong> Imposto sobre Bens e Serviços, cobrado pelos Estados e
+                                    Municípios.</li>
+                                <li><strong>Imposto Seletivo:</strong> Sobre produtos prejudiciais à saúde e ao meio
+                                    ambiente.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(4)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                4</div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">Como a Reforma Tributária afetará o IPI e
+                                a Zona Franca de Manaus?</h3>
+                        </div>
+                        <svg id="faq-icon-4" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-4" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p>O IPI terá suas alíquotas zeradas, exceto para produtos concorrentes de fora da Zona
+                                Franca de Manaus, onde a cobrança continuará para proteger as indústrias locais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(5)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                5</div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">O que é o split payment?</h3>
+                        </div>
+                        <svg id="faq-icon-5" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-5" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p>Split payment é um mecanismo onde prestadores de serviços de pagamentos eletrônicos (como
+                                bancos e operadoras de cartão) segregam e recolhem os valores do IBS e da CBS no momento
+                                da liquidação financeira da operação, facilitando a efetivação do princípio da não
+                                cumulatividade.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(6)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                6</div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">O que é a Cesta Básica Nacional de
+                                Alimentos?</h3>
+                        </div>
+                        <svg id="faq-icon-6" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-6" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p>A Cesta Básica é um conjunto de produtos alimentícios que terá alíquotas de IBS e CBS
+                                reduzidas a zero, visando facilitar o acesso a alimentos essenciais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(7)"
+                        class="w-full flex items-center justify-center p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                7</div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">Como funcionará o cashback na Reforma
+                                Tributária?</h3>
+                        </div>
+                        <svg id="faq-icon-7" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-7" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p>O cashback permitirá a devolução de valores de IBS e CBS a pessoas físicas em situações
+                                específicas, com o objetivo de reduzir desigualdades de renda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(8)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                8</div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">Quando as mudanças da Reforma Tributária
+                                entrarão em vigor?</h3>
+                        </div>
+                        <svg id="faq-icon-8" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-8" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p>As mudanças ocorrerão gradualmente entre 2026 e 2033, com a extinção de tributos e a
+                                implementação dos novos. Acompanhe a linha do tempo para entender as datas específicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(9)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                9</div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">Como posso me manter informado sobre a
+                                tramitação do Projeto de Lei Complementar nº 108/2024?</h3>
+                        </div>
+                        <svg id="faq-icon-9" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-9" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p>Você pode acompanhar a tramitação acessando o site do Congresso Nacional. Utilize o QR
+                                Code disponível na cartilha para facilitar o acesso.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFAQ(10)"
+                        class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="flex items-start gap-4 flex-1">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
+                                10</div>
+                            <h3 class="text-lg font-bold text-gray-900 pr-4">Onde posso buscar mais informações sobre
+                                a Reforma Tributária?</h3>
+                        </div>
+                        <svg id="faq-icon-10" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-brand-orange flex-shrink-0 transition-transform duration-300"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="faq-answer-10" class="hidden px-6 pb-6">
+                        <div class="pl-12 text-gray-600 leading-relaxed">
+                            <p class="mb-3">Para mais detalhes, entre em contato com a JP Contábil ou consulte a
+                                cartilha disponibilizada pela Secretaria da Fazenda.</p>
+                            <p class="font-semibold text-brand-blue">Quer saber mais? Fale com a JP Contábil para
+                                esclarecer suas dúvidas e se manter atualizado sobre as mudanças que impactarão seu
+                                negócio!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Social Media -->
+    <footer class="bg-gradient-to-b from-brand-blue-dark to-brand-blue text-white py-8 w-full">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center space-y-6">
+                <!-- Social Media Title -->
+                <h3 class="text-2xl font-bold text-brand-orange">Fale Conosco</h3>
+                <p class="text-sm text-white/80">Dúvidas? Entre em contato conosco</p>
+
+                <!-- Social Media Links -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/jpcontabil.tg/" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-4 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border-2 border-brand-orange/30 hover:border-brand-orange hover:bg-white/20 transition-all duration-300 hover:scale-105 group min-w-[280px]">
+                        <img src="{{ asset('images/instagram.png') }}" alt="Instagram" class="w-10 h-10">
+                        <div class="text-left">
+                            <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">Instagram</p>
+                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
+                                @jpcontabil.tg</p>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5549991352070" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center gap-4 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border-2 border-brand-orange/30 hover:border-brand-orange hover:bg-white/20 transition-all duration-300 hover:scale-105 group min-w-[280px]">
+                        <img src="{{ asset('images/whatsapp.png') }}" alt="WhatsApp" class="w-10 h-10">
+                        <div class="text-left">
+                            <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">WhatsApp</p>
+                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
+                                (49) 9 9135-2070</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Address and Map Section -->
+                <div class="pt-8 w-full">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        <!-- Address Information -->
+                        <div class="flex flex-col space-y-4">
+                            <h3 class="text-2xl font-bold text-brand-orange mb-2 text-center lg:text-left">Localização
+                            </h3>
+
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">
+                                    Endereço</p>
+                                <p class="text-base text-white font-medium mb-2">JP Contábil</p>
+                                <p class="text-sm text-white/80 leading-relaxed">
+                                    Av. Irmãos Piccoli, 480<br>
+                                    Bairro Centro<br>
+                                    Tangará - SC, 89642-000<br>
+                                    Brasil
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">
+                                    Horário
+                                    de Funcionamento</p>
+                                <p class="text-sm text-white/80">
+                                    Segunda a Sexta<br>
+                                    <span class="text-white font-medium">08:00 - 18:00</span>
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">
+                                    Contato
+                                </p>
+                                <p class="text-sm text-white/80">
+                                    Telefone: <span class="text-white font-medium">(49) 9 9135-2070</span><br>
+                                    Email: <span class="text-white font-medium">contato@jpcontabil.com.br</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps Embed -->
+                        <div class="w-full h-full rounded-xl overflow-hidden border-2 border-brand-orange/30 shadow-lg"
+                            style="min-height: 500px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.97866256896083!2d-51.2439743189634!3d-27.104058586927575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e15a143f0f4929%3A0xcdbb3ce8d2ae35aa!2sJP%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1764939313362!5m2!1spt-BR!2sbr"
+                                style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="pt-8 border-t border-brand-orange/20 w-full max-w-6xl text-center mx-auto">
+                    <p class="text-sm text-white/70">
+                        © {{ date('Y') }} Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Modal JavaScript -->
     <script>
         function openModal(year) {
@@ -1273,6 +1582,20 @@
                 });
             }
         });
+
+        // FAQ Toggle Function
+        function toggleFAQ(number) {
+            const answer = document.getElementById(`faq-answer-${number}`);
+            const icon = document.getElementById(`faq-icon-${number}`);
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
     </script>
 </body>
 
