@@ -415,6 +415,28 @@
                                 (49) 9 9135-2070</p>
                         </div>
                     </a>
+
+                    <!-- Email -->
+                    <a href="mailto:contato@jpcontabil.com.br"
+                        class="flex items-center gap-4 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border-2 border-brand-orange/30 hover:border-brand-orange hover:bg-white/20 transition-all duration-300 hover:scale-105 group min-w-[280px]">
+                        <img src="{{ asset('images/email.png') }}" alt="Email" class="w-10 h-10">
+                        <div class="text-left">
+                            <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">Email</p>
+                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
+                                contato@jpcontabil.com.br</p>
+                        </div>
+                    </a>
+
+                    <!-- Telefone -->
+                    <a href="tel:+554933320120"
+                        class="flex items-center gap-4 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl border-2 border-brand-orange/30 hover:border-brand-orange hover:bg-white/20 transition-all duration-300 hover:scale-105 group min-w-[280px]">
+                        <img src="{{ asset('images/telefone.png') }}" alt="Telefone" class="w-10 h-10">
+                        <div class="text-left">
+                            <p class="text-xs text-brand-orange font-semibold uppercase tracking-wide">Telefone</p>
+                            <p class="text-base font-bold text-white group-hover:text-brand-orange transition-colors">
+                                (49) 3332-0120</p>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Address and Map Section -->
@@ -428,9 +450,8 @@
                             <div
                                 class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
                                 <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">
-                                    Endereço
-                                </p>
-                                <p class="text-base text-white font-medium mb-2">JP Contabilidade e Gestão</p>
+                                    Endereço</p>
+                                <p class="text-base text-white font-medium mb-2">JP Contábil</p>
                                 <p class="text-sm text-white/80 leading-relaxed">
                                     Av. Irmãos Piccoli, 480<br>
                                     Bairro Centro<br>
@@ -444,25 +465,15 @@
                                 <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Horário
                                     de Funcionamento</p>
                                 <p class="text-sm text-white/80">
-                                    Segunda a Sexta<br>
-                                    <span class="text-white font-medium">08:00 - 18:00</span>
-                                </p>
-                            </div>
-
-                            <div
-                                class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
-                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Contato
-                                </p>
-                                <p class="text-sm text-white/80">
-                                    Telefone: <span class="text-white font-medium">(49) 9 9135-2070</span><br>
-                                    Email: <span class="text-white font-medium">contato@jpcontabil.com.br</span>
+                                    Segunda a Sexta-feira<br>
+                                    <span class="text-white font-medium">07:30 - 12:00 / 13:00 - 18:00</span>
                                 </p>
                             </div>
                         </div>
 
                         <!-- Google Maps Embed -->
-                        <div class="w-full h-full rounded-xl overflow-hidden border-2 border-brand-orange/30 shadow-lg"
-                            style="min-height: 500px;">
+                        <div class="w-full h-auto rounded-xl overflow-hidden border-2 border-brand-orange/30 shadow-lg"
+                            style="height: 100%;">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.97866256896083!2d-51.2439743189634!3d-27.104058586927575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e15a143f0f4929%3A0xcdbb3ce8d2ae35aa!2sJP%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1764939313362!5m2!1spt-BR!2sbr"
                                 style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
