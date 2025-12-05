@@ -108,7 +108,7 @@
                         </div>
                         <div class="relative">
                             <img src="{{ asset('images/grupo-jp.jpg') }}" alt="Equipe JP Contábil"
-                                class="w-full h-auto max-h-64 md:max-h-80 rounded-2xl shadow-2xl object-contain bg-zinc-100 dark:bg-zinc-800">
+                                class="w-full h-auto max-h-64 md:max-h-80 rounded-2xl shadow-2xl object-contain bg-zinc-100 md:bg-gradient-to-r md:from-brand-blue md:to-brand-orange dark:bg-zinc-800 dark:md:bg-gradient-to-r dark:md:from-brand-blue dark:md:to-brand-orange">
                             <div
                                 class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-2xl p-4 md:p-5">
                                 <p class="text-white font-bold text-base md:text-lg">Equipe JP Contábil</p>
@@ -430,7 +430,7 @@
                                 <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">
                                     Endereço
                                 </p>
-                                <p class="text-base text-white font-medium mb-2">JP Contábil</p>
+                                <p class="text-base text-white font-medium mb-2">JP Contabilidade e Gestão</p>
                                 <p class="text-sm text-white/80 leading-relaxed">
                                     Av. Irmãos Piccoli, 480<br>
                                     Bairro Centro<br>
