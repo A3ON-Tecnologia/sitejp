@@ -84,17 +84,8 @@
         <div class="container mx-auto max-w-7xl">
             <!-- Section Header -->
             <div class="text-center mb-8 md:mb-12 mt-4 md:mt-0">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-blue mb-3">
-                    Conheça a <span class="text-brand-orange">JP Contábil</span>
-                </h1>
-                <div class="flex items-center justify-center gap-2 mb-3">
-                    <div class="h-1 w-10 md:w-16 bg-brand-orange rounded-full"></div>
-                    <div class="h-2 w-2 bg-brand-orange rounded-full"></div>
-                    <div class="h-1 w-10 md:w-16 bg-brand-orange rounded-full"></div>
-                </div>
-                <p class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                    Excelência em serviços contábeis com foco no seu sucesso
-                </p>
+                <img src="{{ asset('images/logo-2.png') }}" alt="JP Contábil" class="mx-auto"
+                    style="height: 180px; width: auto;">
             </div>
 
             <div class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 items-start">
