@@ -29,12 +29,19 @@
             </div>
 
             <!-- Center Button -->
-            <div class="hidden md:block">
+            <div class="hidden md:flex md:flex-1 justify-center">
                 <a href="{{ url('/reforma') }}" class="cursor-pointer">
                     <button
                         class="bg-brand-orange text-brand-blue px-6 py-2 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200 cursor-pointer">
                         REFORMA TRIBUTÁRIA
                     </button>
+                </a>
+            </div>
+
+            <!-- Desktop Login Button -->
+            <div class="hidden md:flex items-center">
+                <a href="{{ route('login') }}" class="text-white font-bold hover:underline transition-colors cursor-pointer">
+                    ÁREA DO CLIENTE
                 </a>
             </div>
 
@@ -58,7 +65,7 @@
 
                     <!-- Mobile Login Links -->
                     <a href="{{ route('login') }}" class="text-white font-bold hover:underline transition-colors cursor-pointer text-lg">
-                        Área do Cliente
+                        ÁREA DO CLIENTE
                     </a>
                 </div>
             </div>
@@ -147,8 +154,56 @@
                     </a>
                 </div>
 
+                <!-- Address and Map Section -->
+                <div class="pt-8 w-full">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        <!-- Address Information -->
+                        <div class="flex flex-col space-y-4">
+                            <h3 class="text-2xl font-bold text-brand-orange mb-2 text-center lg:text-left">Localização</h3>
+                            
+                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Endereço</p>
+                                <p class="text-base text-white font-medium mb-2">JP Contábil</p>
+                                <p class="text-sm text-white/80 leading-relaxed">
+                                    Av. Irmãos Piccoli, 480<br>
+                                    Bairro Centro<br>
+                                    Tangará - SC, 89642-000<br>
+                                    Brasil
+                                </p>
+                            </div>
+
+                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Horário de Funcionamento</p>
+                                <p class="text-sm text-white/80">
+                                    Segunda a Sexta<br>
+                                    <span class="text-white font-medium">08:00 - 18:00</span>
+                                </p>
+                            </div>
+
+                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-brand-orange/30 flex-1">
+                                <p class="text-sm text-brand-orange font-semibold uppercase tracking-wide mb-3">Contato</p>
+                                <p class="text-sm text-white/80">
+                                    Telefone: <span class="text-white font-medium">(49) 9 9135-2070</span><br>
+                                    Email: <span class="text-white font-medium">contato@jpcontabil.com.br</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps Embed -->
+                        <div class="w-full h-full rounded-xl overflow-hidden border-2 border-brand-orange/30 shadow-lg" style="min-height: 500px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.97866256896083!2d-51.2439743189634!3d-27.104058586927575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e15a143f0f4929%3A0xcdbb3ce8d2ae35aa!2sJP%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1764939313362!5m2!1spt-BR!2sbr" 
+                                style="width: 100%; height: 100%; border: none;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Copyright -->
-                <div class="pt-6 border-t border-brand-orange/20 w-full max-w-2xl text-center">
+                <div class="pt-8 border-t border-brand-orange/20 w-full max-w-5xl text-center">
                     <p class="text-sm text-white/70">
                         © {{ date('Y') }} Todos os direitos reservados
                     </p>
